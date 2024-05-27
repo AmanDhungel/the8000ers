@@ -1,0 +1,2600 @@
+.nav-container {
+    overflow: hidden;
+  }
+  
+  .nav-container,
+  .nav-container * {
+    box-sizing: border-box;
+  }
+  
+  input,
+  select,
+  textarea,
+  button {
+    outline: 0;
+  }
+
+  .nav-container hr{
+    border: 1px dotted;
+  }
+
+  .nav-container .active{
+    color: orange;
+  }
+  
+  .nav-container {
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    position: relative;
+    width: 1285px;
+    margin: 0 auto;
+  }
+ .nav-container .group-one {
+    flex-shrink: 0;
+    position: relative;
+    width: 77.406px;
+    height: 77.406px;
+    background: url(./asset/item-details/Group-1.png)
+      no-repeat center;
+    background-size: cover;
+  }
+ .nav-container .group-two {
+    flex-shrink: 0;
+    position: relative;
+    width: 77.406px;
+    height: 77.406px;
+    background: url(./asset/item-details/Group-2.png)
+      no-repeat center;
+    background-size: cover;
+    z-index: 3;
+  }
+ .nav-container .group-three {
+    flex-shrink: 0;
+    position: relative;
+    width: 77.406px;
+    height: 77.406px;
+    background: url(./asset/item-details/Group-3.png)
+      no-repeat center;
+    background-size: cover;
+    z-index: 6;
+  }
+ .nav-container .group-four {
+    flex-shrink: 0;
+    position: relative;
+    width: 77.406px;
+    height: 77.406px;
+    background: url(./asset/item-details/Group-4.png)
+      no-repeat center;
+    background-size: cover;
+    z-index: 9;
+  }
+ .nav-container .group-one-1 {
+    flex-shrink: 0;
+    position: relative;
+    width: 77.406px;
+    height: 77.406px;
+    background: url(./asset/item-details/Group-5.png)
+      no-repeat center;
+    background-size: cover;
+    z-index: 12;
+  }
+ .nav-container .group-two-2 {
+    flex-shrink: 0;
+    position: relative;
+    width: 77.406px;
+    height: 77.406px;
+    background: url(./asset/item-details/Group-6.png)
+      no-repeat center;
+    background-size: cover;
+    z-index: 15;
+  }
+ .nav-container .group-three-3 {
+    flex-shrink: 0;
+    position: relative;
+    width: 77.406px;
+    height: 77.406px;
+    background: url(./asset/item-details/Group-7.png)
+      no-repeat center;
+    background-size: cover;
+    z-index: 18;
+  }
+ .nav-container .group-four-4 {
+    flex-shrink: 0;
+    position: relative;
+    width: 77.406px;
+    height: 77.406px;
+    background: url(./asset/item-details/Group-8.png)
+      no-repeat center;
+    background-size: cover;
+    z-index: 21;
+  }
+ .nav-container .line-one {
+    flex-shrink: 0;
+    position: relative;
+    width: 95.081px;
+    height: 2.172px;
+    background: url(./assets/images/e793e9ee-64d3-4fbf-89f9-16d99aa4f93e.png)
+      no-repeat center;
+    background-size: cover;
+    z-index: 2;
+  }
+  .nav-container .line-1 {
+    flex-shrink: 0;
+    position: relative;
+    width: 95.081px;
+    height: 2.172px;
+    background: url(./assets/images/415c4a45-92fb-471b-afc9-f1632440ae7c.png)
+      no-repeat center;
+    background-size: cover;
+    z-index: 5;
+  }
+ .nav-container .line-2 {
+    flex-shrink: 0;
+    position: relative;
+    width: 95.081px;
+    height: 2.172px;
+    background: url(./assets/images/9d8e02c7-e640-42b2-87b0-7649ffe34884.png)
+      no-repeat center;
+    background-size: cover;
+    z-index: 8;
+  }
+ .nav-container .line-3 {
+    flex-shrink: 0;
+    position: relative;
+    width: 95.081px;
+    height: 2.172px;
+    background: url(./assets/images/4b8dd07b-62f9-43f2-abf1-52548971cb0b.png)
+      no-repeat center;
+    background-size: cover;
+    z-index: 11;
+  }
+ .nav-container .line-4 {
+    flex-shrink: 0;
+    position: relative;
+    width: 95.081px;
+    height: 2.172px;
+    background: url(./assets/images/8eaa928d-c3a4-4a27-8f60-46748dddcfdc.png)
+      no-repeat center;
+    background-size: cover;
+    z-index: 14;
+  }
+ .nav-container .line-5 {
+    flex-shrink: 0;
+    position: relative;
+    width: 95.081px;
+    height: 2.172px;
+    background: url(./assets/images/e6d68af2-a8cd-483d-81c7-14c6c4468c9c.png)
+      no-repeat center;
+    background-size: cover;
+    z-index: 17;
+  }
+ .nav-container .line {
+    flex-shrink: 0;
+    position: relative;
+    width: 95.081px;
+    height: 2.172px;
+    background: url(./assets/images/90c08ad1-4918-4bf4-8f78-0f177013c02c.png)
+      no-repeat center;
+    background-size: cover;
+    z-index: 20;
+  }
+
+  /* below nav  */
+  .below-nav{
+    display: flex;
+    margin-top: 100px;
+  }
+
+  .description-container {
+    box-sizing: border-box;
+    overflow: hidden;
+    position: relative;
+    width: 361px;
+    height: 611px;
+    margin: 0 auto;
+    border-radius: 48.779px;
+    box-shadow: 0 15.993px 31.986px 0 rgba(0, 0, 0, 0.6);
+  }
+ .description-container  .rectangle {
+    position: absolute;
+    width: 361px;
+    height: 611px;
+    top: 50%;
+    left: 50%;
+    font-size: 0px;
+    background: #ffffff;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    border-radius: 48.779px;
+    box-shadow: 0 15.993px 31.986px 0 rgba(0, 0, 0, 0.6);
+  }
+  .description-container .description {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    position: relative;
+    width: 190px;
+    height: 12px;
+    margin: 50px 0 0 86px;
+    color: #232323;
+    font-family: Poppins, var(--default-font-family);
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 12px;
+    text-align: center;
+    white-space: nowrap;
+    z-index: 2;
+  }
+ .description-container  .lorem-ipsum {
+    display: flex;
+    align-items: flex-start;
+    position: relative;
+    width: 279px;
+    height: 449px;
+    margin: 90px 0 0 41px;
+    color: #232323;
+    font-family: Poppins, var(--default-font-family);
+    font-size: 11.195245742797852px;
+    font-weight: 400;
+    line-height: 12.007px;
+    text-align: justified;
+    z-index: 3;
+  }
+
+  /* dynamic-container  */
+  .dynamic-container {
+    box-sizing: border-box;
+    overflow: hidden;
+    position: relative;
+    width: 817px;
+    height: 611px;
+    margin: 0 auto;
+    border-radius: 48.779px;
+    box-shadow: 0 15.993px 31.986px 0 rgba(0, 0, 0, 0.6);
+  }
+   .dynamic-container .rectangle {
+    position: absolute;
+    width: 817px;
+    height: 611px;
+    top: 50%;
+    left: 50%;
+    background: #ffffff;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    border-radius: 48.779px;
+    box-shadow: 0 15.993px 31.986px 0 rgba(0, 0, 0, 0.6);
+  }
+   .dynamic-container .flex-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    width: 539px;
+    height: 48px;
+    margin: 32px 0 0 188px;
+    z-index: 23;
+  }
+   .dynamic-container .travel-question {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-shrink: 0;
+    position: relative;
+    width: 442px;
+    height: 12px;
+    color: #232323;
+    font-family: Poppins, var(--default-font-family);
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 12px;
+    text-align: center;
+    white-space: nowrap;
+    z-index: 2;
+  }
+   .dynamic-container .arrow-right-alt {
+    flex-shrink: 0;
+    position: relative;
+    width: 48px;
+    height: 48px;
+    background: url(./assets/images/3fca8331-29b1-4d96-a8c8-3c90a876d6f4.png)
+      no-repeat center;
+    background-size: 100% 100%;
+    z-index: 23;
+  }
+   .dynamic-container .frame {
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+    gap: 28px;
+    position: relative;
+    width: 470.254px;
+    margin: 32px 0 0 173px;
+    z-index: 3;
+  }
+   .dynamic-container .frame-1 {
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+    flex-shrink: 0;
+    gap: 28px;
+    position: relative;
+    width: 470.254px;
+    z-index: 4;
+  }
+  .dynamic-container  .group-2 {
+    flex-shrink: 0;
+    position: relative;
+    width: 138.085px;
+    height: 99.49px;
+    z-index: 5;
+  }
+   .dynamic-container .rectangle-3 {
+    position: absolute;
+    width: 138.085px;
+    height: 99.49px;
+    top: 0px;
+    left: 0;
+    background: #ffffff;
+    z-index: 6;
+    border-radius: 6.433px;
+    box-shadow: 0 8.577px 10.664px 0 rgba(0, 0, 0, 0.3);
+  }
+   .dynamic-container .person {
+    position: absolute;
+    width: 44.01%;
+    height: 60.31%;
+    top: 17.09%;
+    left: 28.24%;
+    background: url(./asset/item-details/person.png)
+      no-repeat center;
+    background-size: 100% 100%;
+    z-index: 7;
+  }
+   .dynamic-container .line {
+    position: absolute;
+    width: 128.222px;
+    height: 0.43px;
+    top: 80.285px;
+    left: 50%;
+    background: url(./assets/images/335bf3f4-a225-445d-a13e-f6d282b8f97d.png)
+      no-repeat center;
+    background-size: cover;
+    transform: translate(-50.17%, 0);
+    z-index: 9;
+  }
+  .dynamic-container  .solo {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    position: absolute;
+    width: 24px;
+    height: 12px;
+    top: 84.039px;
+    left: calc(50% - 12.04px);
+    color: #5f5f5f;
+    font-family: Poppins, var(--default-font-family);
+    font-size: 11.195245742797852px;
+    font-weight: 400;
+    line-height: 12px;
+    text-align: center;
+    white-space: nowrap;
+    z-index: 8;
+  }
+   .dynamic-container .group-4 {
+    flex-shrink: 0;
+    position: relative;
+    width: 138.085px;
+    height: 99.49px;
+    z-index: 10;
+  }
+   .dynamic-container .rectangle-5 {
+    position: absolute;
+    width: 138.085px;
+    height: 99.49px;
+    top: 0px;
+    left: 0;
+    background: #ffffff;
+    z-index: 11;
+    border-radius: 6.433px;
+    box-shadow: 0 8.577px 10.664px 0 rgba(0, 0, 0, 0.3);
+  }
+   .dynamic-container .rectangle-6 {
+    position: absolute;
+    width: 104.207px;
+    height: 66.898px;
+    top: 6.004px;
+    left: 50%;
+    transform: translate(-50.2%, 0);
+    z-index: 15;
+  }
+  .dynamic-container  .groups {
+    position: absolute;
+    width: 43.45%;
+    height: 60.31%;
+    top: 20.1%;
+    left: 28.18%;
+    background: url(./asset/item-details/groups_2.png)
+      no-repeat center;
+    background-size: 100% 100%;
+    z-index: 12;
+  }
+  .dynamic-container  .line-7 {
+    position: absolute;
+    width: 128.222px;
+    height: 0.43px;
+    top: 80.285px;
+    left: 50%;
+    background: url(./assets/images/70153084-6861-4b88-aa8e-8b492274decf.png)
+      no-repeat center;
+    background-size: cover;
+    transform: translate(-50.17%, 0);
+    z-index: 14;
+  }
+   .dynamic-container .group-8 {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    position: absolute;
+    width: 35px;
+    height: 12px;
+    top: 84.535px;
+    left: calc(50% - 16.5px);
+    color: #5f5f5f;
+    font-family: Poppins, var(--default-font-family);
+    font-size: 11.195245742797852px;
+    font-weight: 400;
+    line-height: 12px;
+    text-align: center;
+    white-space: nowrap;
+    z-index: 13;
+  }
+   .dynamic-container .group-9 {
+    flex-shrink: 0;
+    position: relative;
+    width: 138.085px;
+    height: 99.49px;
+    z-index: 16;
+  }
+  .dynamic-container  .rectangle-a {
+    position: absolute;
+    width: 138.085px;
+    height: 99.49px;
+    top: 0px;
+    left: 0;
+    cursor: pointer;
+    background: #fd9100;
+    border: none;
+    z-index: 17;
+    border-radius: 6.433px;
+    box-shadow: 0 8.577px 10.664px 0 rgba(0, 0, 0, 0.3);
+  }
+  .dynamic-container  .psychology-alt {
+    position: absolute;
+    width: 57.035px;
+    height: 60px;
+    top: 50%;
+    left: 50%;
+    background: url(./asset/item-details/psychology_alt.png)
+      no-repeat center;
+    background-size: cover;
+    transform: translate(-52.97%, -56.24%);
+    z-index: 18;
+  }
+  .dynamic-container  .line-b {
+    position: absolute;
+    width: 128.222px;
+    height: 0.43px;
+    top: 80.285px;
+    left: 50%;
+    background: url(./assets/images/7d4aff3a-1e7f-4684-88d8-b20a071ea0b8.png)
+      no-repeat center;
+    background-size: cover;
+    transform: translate(-50.17%, 0);
+    z-index: 20;
+  }
+  .dynamic-container  .not-sure {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    position: absolute;
+    width: 47px;
+    height: 12px;
+    top: 84.039px;
+    left: calc(50% - 23.04px);
+    color: #ffffff;
+    font-family: Poppins, var(--default-font-family);
+    font-size: 11.195245742797852px;
+    font-weight: 400;
+    line-height: 12px;
+    text-align: center;
+    white-space: nowrap;
+    z-index: 19;
+  }
+
+
+  .dynamic-container .header {
+    box-sizing: border-box;
+    overflow: hidden;
+    position: relative;
+    width: 636px;
+    height: 48.001px;
+    margin: 20px auto;
+  }
+ .dynamic-container  .header .arrow-right-alt {
+    position: absolute;
+    width: 48px;
+    height: 48px;
+    top: 0px;
+    left: 50%;
+  
+    background-size: 100% 100%;
+    transform: translate(-662.5%, 0);
+    z-index: 3;
+  }
+  .dynamic-container .header .arrow-right-alt-1 {
+    position: absolute;
+    width: 7.55%;
+    height: 100%;
+    top: 0;
+    left: 92.45%;
+  
+    background-size: 100% 100%;
+    z-index: 5;
+  }
+  .dynamic-container .header .select-your-travel {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    position: absolute;
+    width: 398px;
+    height: 12px;
+    top: calc(50% - 6px);
+    left: calc(50% - 199px);
+    color: #232323;
+    font-family: Poppins, var(--default-font-family);
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 12px;
+    text-align: center;
+    white-space: nowrap;
+    z-index: 6;
+  }
+
+  /* travel dates images  */
+  .travelDates-imgs {
+    position: relative;
+    width: 470.254px;
+    height: 99.49px;
+    margin: 0 auto;
+  }
+  .travelDates-imgs .frame-1 {
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+    gap: 28px;
+    position: absolute;
+    width: 470.254px;
+    height: 99.49px;
+    top: 0;
+    left: 0;
+  }
+  .travelDates-imgs .group {
+    flex-shrink: 0;
+    position: relative;
+    width: 138.085px;
+    height: 99.49px;
+    z-index: 1;
+  }
+  .travelDates-imgs .rectangle {
+    position: absolute;
+    width: 138.085px;
+    height: 99.49px;
+    background: #fd9100;
+    z-index: 2;
+    border-radius: 6.433px;
+    box-shadow: 0 8.577px 10.664px 0 rgba(0, 0, 0, 0.3);
+  }
+  .travelDates-imgs .calendar-clock {
+    position: absolute;
+    width: 43.45%;
+    height: 60.31%;
+    top: 16.62%;
+    left: 28.24%;
+    background: url(./asset/item-details/calendar_clock.png)
+      no-repeat center;
+    background-size: 100% 100%;
+    z-index: 3;
+  }
+  .travelDates-imgs .line {
+    position: absolute;
+    width: 128.221px;
+    height: 0.43px;
+    top: 80.285px;
+    left: 50%;
+    background: url(./assets/images/ae021677-5d6e-4553-9d07-f4eadc296bb7.png)
+      no-repeat center;
+    background-size: cover;
+    transform: translate(-50.17%, 0);
+    z-index: 5;
+  }
+  .travelDates-imgs .exact-date {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    position: absolute;
+    width: 60px;
+    height: 12px;
+    top: 84.039px;
+    left: calc(50% - 30.04px);
+    color: #ffffff;
+    font-family: Poppins, var(--default-font-family);
+    font-size: 11.195245742797852px;
+    font-weight: 400;
+    line-height: 12px;
+    text-align: center;
+    white-space: nowrap;
+    z-index: 4;
+  }
+  .travelDates-imgs .group-2 {
+    flex-shrink: 0;
+    position: relative;
+    width: 138.085px;
+    height: 99.49px;
+    z-index: 6;
+  }
+ .travelDates-imgs  .rectangle-3 {
+    position: absolute;
+    width: 138.085px;
+    height: 99.49px;
+    top: 0px;
+    left: 0;
+    background: #ffffff;
+    z-index: 7;
+    border-radius: 6.433px;
+    box-shadow: 0 8.577px 10.664px 0 rgba(0, 0, 0, 0.3);
+  }
+ .travelDates-imgs  .rectangle-4 {
+    position: absolute;
+    width: 104.207px;
+    height: 66.898px;
+    top: 6.004px;
+    left: 50%;
+    transform: translate(-50.2%, 0);
+    z-index: 11;
+  }
+ .travelDates-imgs  .calendar-month {
+    position: absolute;
+    width: 43.45%;
+    height: 60.31%;
+    top: 20.15%;
+    left: 27.88%;
+    background: url(./asset/item-details/calendar_month.png)
+      no-repeat center;
+    background-size: 100% 100%;
+    z-index: 8;
+  }
+ .travelDates-imgs  .line-5 {
+    position: absolute;
+    width: 128.221px;
+    height: 0.43px;
+    top: 80.285px;
+    left: 50%;
+    background: url(./assets/images/948bcdb8-31fa-4ed1-802e-392f7b24a891.png)
+      no-repeat center;
+    background-size: cover;
+    transform: translate(-50.17%, 0);
+    z-index: 10;
+  }
+ .travelDates-imgs  .flexible-date-range {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    position: absolute;
+    width: 110px;
+    height: 12px;
+    top: 84.535px;
+    left: calc(50% - 54.5px);
+    color: #5f5f5f;
+    font-family: Poppins, var(--default-font-family);
+    font-size: 11.195245742797852px;
+    font-weight: 400;
+    line-height: 12px;
+    text-align: center;
+    white-space: nowrap;
+    z-index: 9;
+  }
+ .travelDates-imgs  .group-6 {
+    flex-shrink: 0;
+    position: relative;
+    width: 138.085px;
+    height: 99.49px;
+    z-index: 12;
+  }
+ .travelDates-imgs  .rectangle-7 {
+    position: absolute;
+    width: 138.085px;
+    height: 99.49px;
+    top: 0px;
+    left: 0;
+    background: #ffffff;
+    z-index: 13;
+    border-radius: 6.433px;
+    box-shadow: 0 8.577px 10.664px 0 rgba(0, 0, 0, 0.3);
+  }
+ .travelDates-imgs  .event-repeat {
+    position: absolute;
+    width: 43.45%;
+    height: 60.31%;
+    top: 16.08%;
+    left: 28.24%;
+    background: url(./asset/item-details/event_repeat.png)
+      no-repeat center;
+    background-size: 100% 100%;
+    z-index: 14;
+  }
+ .travelDates-imgs  .line-8 {
+    position: absolute;
+    width: 128.221px;
+    height: 0.43px;
+    top: 80.285px;
+    left: 50%;
+    background: url(./assets/images/d67b130f-b2fc-4f76-b311-6d7d70a3db5a.png)
+      no-repeat center;
+    background-size: cover;
+    transform: translate(-50.17%, 0);
+    z-index: 16;
+  }
+  .travelDates-imgs .decide-later {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    position: absolute;
+    width: 70px;
+    height: 12px;
+    top: 84.039px;
+    left: calc(50% - 35.04px);
+    color: #5f5f5f;
+    font-family: Poppins, var(--default-font-family);
+    font-size: 11.195245742797852px;
+    font-weight: 400;
+    line-height: 12px;
+    text-align: center;
+    white-space: nowrap;
+    z-index: 15;
+  }
+
+  /* travel dates dates  */
+
+  .calenders{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 41px;
+  }
+
+  .calender-body{
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40vh;
+    margin: 0;
+  }
+
+ .calendar-container {
+  display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+ .calendar-container input[type="text"] {
+  margin-bottom: 20px;
+  padding: 6px;
+  font-size: 16px;
+}
+
+ .calendar-container .calendar {
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  width: 300px;
+  height: 347px;
+}
+
+ .calendar-container .header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  width: 299px;
+  background-color: #f4f4f4;
+}
+
+ .calendar-container .header button {
+  background: none;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  color: #232323;
+}
+
+ .calendar-container #month-year {
+  font-size: 18px;
+}
+
+ .calendar-container .body {
+  padding: 10px;
+}
+
+ .calendar-container .weekdays {
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold;
+}
+
+ .calendar-container .days {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+ .calendar-container .days div {
+  width: 14.28%;
+  text-align: center;
+  padding: 10px 0;
+  cursor: pointer;
+}
+
+ .calendar-container .days div:hover {
+  background-color: #f0f0f0;
+}
+
+ .calendar-container .days .selected {
+  background-color: orange;
+  color: white;
+  border-radius: 50%;
+}
+
+
+
+.calendar-container .end-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  width: 299px;
+  margin-top: 18px;
+  background-color: #f4f4f4;
+}
+.calendar-container .end-header button {
+  background: none;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+
+.calendar-container .end-days {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.calendar-container #end-month-year {
+  font-size: 18px;
+}
+
+.calendar-container .end-days {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+ .calendar-container .end-days div {
+  width: 14.28%;
+  text-align: center;
+  padding: 10px 0;
+  cursor: pointer;
+}
+
+
+/* country container  */
+.country-container {
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: nowrap;
+  gap: 28px;
+  position: relative;
+  width: 636.339px;
+  margin: 20px auto;
+
+}
+.country-container .rectangle-nepal {
+  flex-shrink: 0;
+  position: relative;
+  width: 138.085px;
+  height: 99.49px;
+  background: #fd9100;
+  z-index: 1;
+  border-radius: 6.433px;
+  box-shadow: 0 8.577px 10.664px 0 rgba(0, 0, 0, 0.3);
+}
+.country-container .px-flag {
+  position: relative;
+  width: 40.714px;
+  height: 50px;
+  margin: 17px 0 0 49px;
+  background: url(./asset/item-details/Flag_of_Nepal_.png)
+    no-repeat center;
+  background-size: cover;
+  z-index: 2;
+}
+.country-container .line {
+  position: relative;
+  width: 128.222px;
+  height: 0.43px;
+  margin: 13.285px 0 0 4.719px;
+  background: url(./assets/images/0205800b-deb6-4f06-8b4c-951fc959b1d5.png)
+    no-repeat center;
+  background-size: cover;
+  z-index: 4;
+}
+.country-container .nepal {
+  position: relative;
+  width: 33px;
+  height: 12px;
+  margin: 3.324px 0 0 53px;
+  cursor: pointer;
+  color: #ffffff;
+  font-family: Poppins, var(--default-font-family);
+  font-size: 11.195245742797852px;
+  font-weight: 400;
+  line-height: 12px;
+  white-space: nowrap;
+  background: transparent;
+  border: none;
+  z-index: 3;
+}
+.country-container .rectangle-1 {
+  flex-shrink: 0;
+  position: relative;
+  width: 138.085px;
+  height: 99.49px;
+  background: #ffffff;
+  z-index: 6;
+  border-radius: 6.433px;
+  box-shadow: 0 8.577px 10.664px 0 rgba(0, 0, 0, 0.3);
+}
+.country-container .rectangle-2 {
+  position: relative;
+  width: 104.207px;
+  height: 66.898px;
+  margin: 6.004px 0 0 16.727px;
+  z-index: 10;
+  overflow: visible auto;
+}
+.country-container .px-flag-of-india {
+  position: relative;
+  width: 75.362px;
+  height: 50px;
+  margin: 13.996px 0 0 14.188px;
+  background: url(./asset/item-details/Flag_of_India.png)
+    no-repeat center;
+  background-size: cover;
+  z-index: 7;
+}
+.country-container .line-3 {
+  position: relative;
+  width: 128.222px;
+  height: 0.43px;
+  margin: 7.383px 0 0 4.719px;
+  background: url(./assets/images/102cdbee-f806-4528-b4b1-6b237bbf7bc3.png)
+    no-repeat center;
+  background-size: cover;
+  z-index: 9;
+}
+.country-container .india {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  position: relative;
+  width: 28px;
+  height: 12px;
+  margin: 3.82px 0 0 54.915px;
+  color: #5f5f5f;
+  font-family: Poppins, var(--default-font-family);
+  font-size: 11.195245742797852px;
+  font-weight: 400;
+  line-height: 12px;
+  text-align: center;
+  white-space: nowrap;
+  z-index: 8;
+}
+.country-container .rectangle-4 {
+  flex-shrink: 0;
+  position: relative;
+  width: 138.085px;
+  height: 99.49px;
+  background: #ffffff;
+  z-index: 12;
+  border-radius: 6.433px;
+  box-shadow: 0 8.577px 10.664px 0 rgba(0, 0, 0, 0.3);
+}
+.country-container .line-5 {
+  position: relative;
+  width: 128.221px;
+  height: 0.43px;
+  margin: 80.285px 0 0 4.719px;
+  background: url(./assets/images/88fed9ba-3d1f-42c6-a61b-507b5d20c5e8.png)
+    no-repeat center;
+  background-size: cover;
+  z-index: 15;
+}
+.country-container .span-pakistan {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  position: relative;
+  width: 48px;
+  height: 12px;
+  margin: 3.82px 0 0 44.828px;
+  color: #5f5f5f;
+  font-family: Poppins, var(--default-font-family);
+  font-size: 11.195245742797852px;
+  font-weight: 400;
+  line-height: 12px;
+  text-align: center;
+  white-space: nowrap;
+  z-index: 14;
+}
+.country-container .rectangle-6 {
+  position: absolute;
+  width: 104.207px;
+  height: 66.898px;
+  top: 6.004px;
+  left: 50%;
+  transform: translate(-50.2%, 0);
+  z-index: 16;
+}
+.country-container .px-flag-of-pakistan {
+  position: absolute;
+  width: 75px;
+  height: 50px;
+  top: 50%;
+  left: 50%;
+  background: url(./asset/item-details/Flag_of_Pakistan.png)
+    no-repeat center;
+  background-size: cover;
+  transform: translate(-49.62%, -49.49%);
+  z-index: 13;
+}
+.country-container .rectangle-7 {
+  flex-shrink: 0;
+  position: relative;
+  width: 138.085px;
+  height: 99.49px;
+  background: #ffffff;
+  z-index: 18;
+  border-radius: 6.433px;
+  box-shadow: 0 8.577px 10.664px 0 rgba(0, 0, 0, 0.3);
+}
+.country-container .flag-of-china {
+  position: relative;
+  width: 74.286px;
+  height: 50px;
+  margin: 16px 0 0 38.742px;
+  background: url(./asset/item-details/Flag_of_China.png)
+    no-repeat center;
+  background-size: cover;
+  z-index: 19;
+}
+.country-container .line-8 {
+  position: relative;
+  width: 128.221px;
+  height: 0.43px;
+  margin: 14.285px 0 0 4.719px;
+  background: url(./assets/images/5d5d376c-b72a-4246-aed1-cb1b4881508f.png)
+    no-repeat center;
+  background-size: cover;
+  z-index: 21;
+}
+.country-container .china {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  position: relative;
+  width: 34px;
+  height: 12px;
+  margin: 3.324px 0 0 51.742px;
+  color: #5f5f5f;
+  font-family: Poppins, var(--default-font-family);
+  font-size: 11.195245742797852px;
+  font-weight: 400;
+  line-height: 12px;
+  text-align: center;
+  white-space: nowrap;
+  z-index: 20;
+}
+
+
+/* difficulty Container  */
+.difficulty-container {
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: nowrap;
+  gap: 28px;
+  position: relative;
+  width: 636.339px;
+  margin: 20px auto;
+
+}
+.difficulty-container .rectangle-nepal {
+  flex-shrink: 0;
+  position: relative;
+  width: 138.085px;
+  height: 99.49px;
+  background: white;
+  z-index: 1;
+  border-radius: 6.433px;
+  box-shadow: 0 8.577px 10.664px 0 rgba(0, 0, 0, 0.3);
+}
+.difficulty-container .px-flag {
+  position: relative;
+  width: 40.714px;
+  height: 50px;
+  margin: 17px 0 0 49px;
+  background: url(./asset/item-details/Trekking.png)
+    no-repeat center;
+  background-size: cover;
+  z-index: 2;
+  top: -11px;
+}
+.difficulty-container .line {
+  position: relative;
+  width: 128.222px;
+  height: 0.43px;
+  margin: 13.285px 0 0 4.719px;
+  background: url(./assets/images/0205800b-deb6-4f06-8b4c-951fc959b1d5.png)
+    no-repeat center;
+  background-size: cover;
+  z-index: 4;
+  top: 67px;
+  left:65px
+}
+.difficulty-container .nepal {
+  position: relative;
+  width: 33px;
+  height: 12px;
+  margin: 3.324px 0 0 45px;
+  cursor: pointer;
+  color: black;
+  font-family: Poppins, var(--default-font-family);
+  font-size: 11.195245742797852px;
+  font-weight: 400;
+  line-height: 12px;
+  white-space: nowrap;
+  background: transparent;
+  border: none;
+  z-index: 3;
+}
+.difficulty-container .rectangle-1 {
+  flex-shrink: 0;
+  position: relative;
+  width: 138.085px;
+  height: 99.49px;
+  background: orange;
+  z-index: 6;
+  border-radius: 6.433px;
+  box-shadow: 0 8.577px 10.664px 0 rgba(0, 0, 0, 0.3);
+}
+.difficulty-container .rectangle-2 {
+  position: relative;
+  width: 104.207px;
+  height: 66.898px;
+  margin: 6.004px 0 0 16.727px;
+  z-index: 10;
+  overflow: visible auto;
+}
+.difficulty-container .px-flag-of-india {
+  position: relative;
+  width: 75.362px;
+  height: 50px;
+  margin: 13.996px 0 0 14.188px;
+  background: url(./asset/item-details/Mission.png)
+    no-repeat center;
+  background-size: cover;
+  z-index: 7;
+}
+.difficulty-container .line-3 {
+  position: relative;
+  width: 128.222px;
+  height: 0.43px;
+  margin: 7.383px 0 0 4.719px;
+  background: url(./assets/images/102cdbee-f806-4528-b4b1-6b237bbf7bc3.png)
+    no-repeat center;
+  background-size: cover;
+  z-index: 9;
+}
+.difficulty-container .india {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  position: relative;
+  width: 28px;
+  height: 12px;
+  margin: 3.82px 0 0 54.915px;
+  color: white;
+  font-family: Poppins, var(--default-font-family);
+  font-size: 11.195245742797852px;
+  font-weight: 400;
+  line-height: 12px;
+  text-align: center;
+  white-space: nowrap;
+  z-index: 8;
+}
+.difficulty-container .rectangle-4 {
+  flex-shrink: 0;
+  position: relative;
+  width: 138.085px;
+  height: 99.49px;
+  background: #ffffff;
+  z-index: 12;
+  border-radius: 6.433px;
+  box-shadow: 0 8.577px 10.664px 0 rgba(0, 0, 0, 0.3);
+}
+.difficulty-container .line-5 {
+  position: relative;
+  width: 128.221px;
+  height: 0.43px;
+  margin: 80.285px 0 0 4.719px;
+  background: url(./assets/images/88fed9ba-3d1f-42c6-a61b-507b5d20c5e8.png)
+    no-repeat center;
+  background-size: cover;
+  z-index: 15;
+}
+.difficulty-container .span-pakistan {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  position: relative;
+  width: 48px;
+  height: 12px;
+  margin: 3.82px 0 0 44.828px;
+  color: #5f5f5f;
+  font-family: Poppins, var(--default-font-family);
+  font-size: 11.195245742797852px;
+  font-weight: 400;
+  line-height: 12px;
+  text-align: center;
+  white-space: nowrap;
+  z-index: 14;
+}
+.difficulty-container .rectangle-6 {
+  position: absolute;
+  width: 104.207px;
+  height: 66.898px;
+  top: 6.004px;
+  left: 50%;
+  transform: translate(-50.2%, 0);
+  z-index: 16;
+}
+.difficulty-container .px-flag-of-pakistan {
+  position: absolute;
+  width: 75px;
+  height: 50px;
+  top: 50%;
+  left: 50%;
+  background: url(./asset/item-details/Opera\ Glasses.png)
+    no-repeat center;
+  background-size: cover;
+  transform: translate(-49.62%, -49.49%);
+  z-index: 13;
+}
+.difficulty-container .rectangle-7 {
+  flex-shrink: 0;
+  position: relative;
+  width: 138.085px;
+  height: 99.49px;
+  background: #ffffff;
+  z-index: 18;
+  border-radius: 6.433px;
+  box-shadow: 0 8.577px 10.664px 0 rgba(0, 0, 0, 0.3);
+}
+.difficulty-container .flag-of-china {
+  position: relative;
+  width: 74.286px;
+  height: 50px;
+  margin: 16px 0 0 38.742px;
+  background: url(./asset/item-details/Box\ Other.png)
+    no-repeat center;
+  background-size: contain;
+  z-index: 19;
+}
+.difficulty-container .line-8 {
+  position: relative;
+  width: 128.221px;
+  height: 0.43px;
+  margin: 14.285px 0 0 4.719px;
+  background-size: cover;
+  z-index: 21;
+}
+.difficulty-container .china {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  position: relative;
+  width: 34px;
+  height: 12px;
+  margin: 3.324px 0 0 51.742px;
+  color: #5f5f5f;
+  font-family: Poppins, var(--default-font-family);
+  font-size: 11.195245742797852px;
+  font-weight: 400;
+  line-height: 12px;
+  text-align: center;
+  white-space: nowrap;
+  z-index: 20;
+}
+
+.difficulty-choice{
+  display: flex;
+  flex-direction: column;
+  margin-left: 80px;
+  margin-top: 80px;
+}
+
+.difficulty-choice div{
+  display: flex;
+align-items: center;
+}
+
+.difficulty-choice div button{
+  /* Designs-btn */
+
+width: 194px;
+height: 49.91px;
+
+filter: drop-shadow(0px 14.058px 28.1159px rgba(0, 0, 0, 0.6));
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+text-transform: uppercase;
+color: orange;
+border: none;
+outline: none;
+border-radius: 5.3px;
+margin-top: -25px;
+}
+
+.difficulty-expedition {
+  display: flex; 
+  flex-direction: column; 
+  color: black; 
+  position: relative; 
+  z-index: 2;
+  gap: 20px;
+}
+.difficulty-expedition h1{
+  margin-left: 50px;
+  margin-bottom: -15px;
+}
+
+.difficulty-expedition hr{
+  width: 80%;
+  margin-left: 50px;
+}
+
+.difficulty-expedition div{
+  display: flex;
+  margin-left: 50px;
+}
+
+
+.difficulty-expedition div hr{
+  margin-left: 50px;
+   margin-right: 20px;
+   border: 1px solid;
+   margin-top: 20px;
+   height: 100px;
+   width: 1px;
+}
+
+.difficulty-expedition div ul{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.difficulty-expedition div ul li{
+display: flex;
+  list-style: none;
+gap: 10px;
+}
+
+.difficulty-expedition div button{
+  height: 50px ;
+  margin-top: auto;
+  margin-bottom: auto;
+  padding: 10px 20px;
+  border-radius: 25px;
+  border: none;
+  background-color: #232323;
+  color: white;
+  cursor: pointer;
+}
+
+/* Accommodation Preferences  */
+.accomodation {
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: nowrap;
+  gap: 28px;
+  position: relative;
+  width: 636.339px;
+  margin: 20px auto;
+
+}
+.accomodation .rectangle-nepal {
+  flex-shrink: 0;
+  position: relative;
+  width: 138.085px;
+  height: 99.49px;
+  background: white;
+  z-index: 1;
+  border-radius: 6.433px;
+  box-shadow: 0 8.577px 10.664px 0 rgba(0, 0, 0, 0.3);
+}
+.accomodation .px-flag {
+  position: relative;
+  width: 40.714px;
+  height: 50px;
+  margin: 17px 0 0 49px;
+  background: url(./asset/item-details/Four\ Squares.png)
+    no-repeat center;
+  background-size: cover;
+  z-index: 2;
+  top: -11px;
+}
+.accomodation .line {
+  position: relative;
+  width: 128.222px;
+  height: 0.43px;
+  margin: 13.285px 0 0 4.719px;
+  background-size: cover;
+  z-index: 4;
+  top: 67px;
+  left:65px
+}
+.accomodation .nepal {
+  position: relative;
+  width: 33px;
+  height: 12px;
+  margin: 3.324px 0 0 45px;
+  cursor: pointer;
+  color: black;
+  font-family: Poppins, var(--default-font-family);
+  font-size: 11.195245742797852px;
+  font-weight: 400;
+  line-height: 12px;
+  white-space: nowrap;
+  background: transparent;
+  border: none;
+  z-index: 3;
+}
+.accomodation .rectangle-1 {
+  flex-shrink: 0;
+  position: relative;
+  width: 138.085px;
+  height: 99.49px;
+  background: orange;
+  z-index: 6;
+  border-radius: 6.433px;
+  box-shadow: 0 8.577px 10.664px 0 rgba(0, 0, 0, 0.3);
+}
+.accomodation .rectangle-2 {
+  position: relative;
+  width: 104.207px;
+  height: 66.898px;
+  margin: 6.004px 0 0 16.727px;
+  z-index: 10;
+  overflow: visible auto;
+}
+.accomodation .px-flag-of-india {
+  position: relative;
+  width: 75.362px;
+  height: 50px;
+  margin: 13.996px 0 0 14.188px;
+  background: url(./asset/item-details/VIP.png)
+    no-repeat center;
+  background-size: cover;
+  z-index: 7;
+}
+.accomodation .line-3 {
+  position: relative;
+  width: 128.222px;
+  height: 0.43px;
+  margin: 7.383px 0 0 4.719px;
+  background: url(./assets/images/102cdbee-f806-4528-b4b1-6b237bbf7bc3.png)
+    no-repeat center;
+  background-size: cover;
+  z-index: 9;
+}
+.accomodation .india {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  position: relative;
+  width: 28px;
+  height: 12px;
+  margin: 3.82px 0 0 54.915px;
+  color: white;
+  font-family: Poppins, var(--default-font-family);
+  font-size: 11.195245742797852px;
+  font-weight: 400;
+  line-height: 12px;
+  text-align: center;
+  white-space: nowrap;
+  z-index: 8;
+}
+.accomodation .rectangle-4 {
+  flex-shrink: 0;
+  position: relative;
+  width: 138.085px;
+  height: 99.49px;
+  background: #ffffff;
+  z-index: 12;
+  border-radius: 6.433px;
+  box-shadow: 0 8.577px 10.664px 0 rgba(0, 0, 0, 0.3);
+}
+.accomodation .line-5 {
+  position: relative;
+  width: 128.221px;
+  height: 0.43px;
+  margin: 80.285px 0 0 4.719px;
+  background: url(./assets/images/88fed9ba-3d1f-42c6-a61b-507b5d20c5e8.png)
+    no-repeat center;
+  background-size: cover;
+  z-index: 15;
+}
+.accomodation .span-pakistan {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  position: relative;
+  width: 48px;
+  height: 12px;
+  margin: 3.82px 0 0 44.828px;
+  color: #5f5f5f;
+  font-family: Poppins, var(--default-font-family);
+  font-size: 11.195245742797852px;
+  font-weight: 400;
+  line-height: 12px;
+  text-align: center;
+  white-space: nowrap;
+  z-index: 14;
+}
+.accomodation .rectangle-6 {
+  position: absolute;
+  width: 104.207px;
+  height: 66.898px;
+  top: 6.004px;
+  left: 50%;
+  transform: translate(-50.2%, 0);
+  z-index: 16;
+}
+.accomodation .px-flag-of-pakistan {
+  position: absolute;
+  width: 75px;
+  height: 50px;
+  top: 50%;
+  left: 50%;
+  background: url(./asset/item-details/Bonfire.png)
+    no-repeat center;
+  background-size: cover;
+  transform: translate(-49.62%, -49.49%);
+  z-index: 13;
+}
+.accomodation .rectangle-7 {
+  flex-shrink: 0;
+  position: relative;
+  width: 138.085px;
+  height: 99.49px;
+  background: #ffffff;
+  z-index: 18;
+  border-radius: 6.433px;
+  box-shadow: 0 8.577px 10.664px 0 rgba(0, 0, 0, 0.3);
+}
+.accomodation .flag-of-china {
+  position: relative;
+  width: 74.286px;
+  height: 50px;
+  margin: 16px 0 0 38.742px;
+  background: url(./asset/item-details/Book.png)
+    no-repeat center;
+  background-size: cover;
+  z-index: 19;
+}
+.accomodation .line-8 {
+  position: relative;
+  width: 128.221px;
+  height: 0.43px;
+  margin: 14.285px 0 0 4.719px;
+  background-size: cover;
+  z-index: 21;
+}
+.accomodation .china {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  position: relative;
+  width: 34px;
+  height: 12px;
+  margin: 3.324px 0 0 51.742px;
+  color: #5f5f5f;
+  font-family: Poppins, var(--default-font-family);
+  font-size: 11.195245742797852px;
+  font-weight: 400;
+  line-height: 12px;
+  text-align: center;
+  white-space: nowrap;
+  z-index: 20;
+}
+
+/* Budget Container  */
+.budget-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  flex-wrap: nowrap;
+  gap: 16px;
+  position: relative;
+  width: 511px;
+  height: 147px;
+  margin: 0 auto;
+  padding: 24px 24px 24px 24px;
+}
+.budget-container .sub-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-self: stretch;
+  flex-wrap: nowrap;
+  flex-shrink: 0;
+  gap: 8px;
+  position: relative;
+  min-width: 0;
+}
+.budget-container .content-container {
+  display: flex;
+  align-items: center;
+  align-self: stretch;
+  flex-wrap: nowrap;
+  flex-shrink: 0;
+  position: relative;
+  height: 16px;
+  background: url(./assets/images/ebe44311-26e4-4c02-a452-88c444c9e66c.png)
+    no-repeat center;
+  background-size: cover;
+  z-index: 1;
+}
+.budget-container .wrapper-container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  align-self: stretch;
+  flex-wrap: nowrap;
+  flex-shrink: 0;
+  position: relative;
+  z-index: 2;
+}
+.budget-container .person-container {
+  flex-shrink: 0;
+  position: relative;
+  width: 90px;
+  font-family: Overpass, var(--default-font-family);
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 15.192px;
+  text-align: left;
+  text-overflow: initial;
+  white-space: nowrap;
+  z-index: 3;
+}
+
+.budget-container .dollar-1000 {
+  position: relative;
+  color: #232323;
+  font-family: Overpass, var(--default-font-family);
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 20.256px;
+  text-align: left;
+  text-transform: capitalize;
+}
+.budget-container .person1 {
+  position: relative;
+  color: #232323;
+  font-family: Overpass, var(--default-font-family);
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+  text-align: left;
+  text-transform: capitalize;
+}
+.budget-container .div-person {
+  flex-shrink: 0;
+  position: relative;
+  width: 110px;
+  font-family: Overpass, var(--default-font-family);
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 15.192px;
+  text-align: left;
+  text-overflow: initial;
+  white-space: nowrap;
+  z-index: 4;
+}
+.budget-container .dollar-150000 {
+  position: relative;
+  color: #232323;
+  font-family: Overpass, var(--default-font-family);
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 20.256px;
+  text-align: left;
+  text-transform: capitalize;
+}
+.budget-container .person-1 {
+  position: relative;
+  color: #232323;
+  font-family: Overpass, var(--default-font-family);
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+  text-align: left;
+  text-transform: capitalize;
+}
+.budget-container .divider {
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+  min-width: 0;
+  height: 1px;
+  background: url(./assets/images/e77db846-fbb3-4662-8f27-dbe3ea4a3e69.png)
+    no-repeat center;
+  background-size: cover;
+  z-index: 5;
+}
+.budget-container .container {
+  display: flex;
+  align-items: center;
+  align-self: stretch;
+  flex-wrap: nowrap;
+  flex-shrink: 0;
+  gap: 16px;
+  position: relative;
+  min-width: 0;
+  cursor: pointer;
+  background: transparent;
+  border: none;
+  z-index: 6;
+}
+.budget-container .button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+  flex-grow: 1;
+  flex-shrink: 0;
+  flex-basis: 0;
+  gap: 10px;
+  position: relative;
+  padding: 8px 16px 8px 16px;
+  background: #fd9100;
+  z-index: 7;
+}
+.budget-container .plan-trip {
+  flex-shrink: 0;
+  flex-basis: auto;
+  position: relative;
+  height: 20px;
+  color: #ffffff;
+  font-family: Overpass, var(--default-font-family);
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 20px;
+  text-align: left;
+  text-transform: capitalize;
+  white-space: nowrap;
+  z-index: 8;
+}
+
+.progress-container {
+  position: relative;
+  width: 100%;
+  height: 20px;
+  background-color: #f3f3f3;
+  margin: 20px 0;
+}
+
+.progress-bar {
+  position: absolute;
+  height: 10px;
+  background-color: #808080;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 0;
+}
+
+.progress-circle {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: orange;
+  border-radius: 50%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.progress-circle.start {
+  left: 0;
+}
+
+.progress-circle.end {
+  right: 0;
+}
+
+.Budget
+
+.Budget {
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: nowrap;
+  gap: 28px;
+  position: relative;
+  width: 636.339px;
+  margin: 20px auto;
+
+}
+.Budget .rectangle-nepal {
+  flex-shrink: 0;
+  position: relative;
+  width: 138.085px;
+  height: 99.49px;
+  background: white;
+  z-index: 1;
+  border-radius: 6.433px;
+  box-shadow: 0 8.577px 10.664px 0 rgba(0, 0, 0, 0.3);
+}
+.Budget .px-flag {
+  position: relative;
+  width: 40.714px;
+  height: 50px;
+  margin: 17px 0 0 49px;
+  background: url(./asset/item-details/Money\ Yours.png)
+    no-repeat center;
+  background-size: contain;
+  z-index: 2;
+  top: -11px;
+}
+.Budget .line {
+  position: relative;
+  width: 128.222px;
+  height: 0.43px;
+  margin: 13.285px 0 0 4.719px;
+  background-size: cover;
+  z-index: 4;
+  top: 67px;
+  left:65px
+}
+.Budget .nepal {
+  position: relative;
+  width: 33px;
+  height: 12px;
+  margin: 3.324px 0 0 45px;
+  cursor: pointer;
+  color: black;
+  font-family: Poppins, var(--default-font-family);
+  font-size: 11.195245742797852px;
+  font-weight: 400;
+  line-height: 12px;
+  white-space: nowrap;
+  background: transparent;
+  border: none;
+  z-index: 3;
+}
+.Budget .rectangle-1 {
+  flex-shrink: 0;
+  position: relative;
+  width: 138.085px;
+  height: 99.49px;
+  background: orange;
+  z-index: 6;
+  border-radius: 6.433px;
+  box-shadow: 0 8.577px 10.664px 0 rgba(0, 0, 0, 0.3);
+}
+.Budget .rectangle-2 {
+  position: relative;
+  width: 104.207px;
+  height: 66.898px;
+  margin: 6.004px 0 0 16.727px;
+  z-index: 10;
+  overflow: visible auto;
+}
+.Budget .px-flag-of-india {
+  position: relative;
+  width: 75.362px;
+  height: 50px;
+  margin: 13.996px 0 0 14.188px;
+  background: url(./asset/item-details/Budget.png)
+    no-repeat center;
+  background-size: contain;
+  z-index: 7;
+}
+.Budget .line-3 {
+  position: relative;
+  width: 128.222px;
+  height: 0.43px;
+  margin: 7.383px 0 0 4.719px;
+  background: url(./assets/images/102cdbee-f806-4528-b4b1-6b237bbf7bc3.png)
+    no-repeat center;
+  background-size: cover;
+  z-index: 9;
+}
+.Budget .india {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  position: relative;
+  width: 28px;
+  height: 12px;
+  margin: 3.82px 0 0 54.915px;
+  color: white;
+  font-family: Poppins, var(--default-font-family);
+  font-size: 11.195245742797852px;
+  font-weight: 400;
+  line-height: 12px;
+  text-align: center;
+  white-space: nowrap;
+  z-index: 8;
+}
+.Budget .rectangle-4 {
+  flex-shrink: 0;
+  position: relative;
+  width: 138.085px;
+  height: 99.49px;
+  background: #ffffff;
+  z-index: 12;
+  border-radius: 6.433px;
+  box-shadow: 0 8.577px 10.664px 0 rgba(0, 0, 0, 0.3);
+}
+.Budget .line-5 {
+  position: relative;
+  width: 128.221px;
+  height: 0.43px;
+  margin: 80.285px 0 0 4.719px;
+  background: url(./assets/images/88fed9ba-3d1f-42c6-a61b-507b5d20c5e8.png)
+    no-repeat center;
+  background-size: cover;
+  z-index: 15;
+}
+.Budget .span-pakistan {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  position: relative;
+  width: 48px;
+  height: 12px;
+  margin: 3.82px 0 0 44.828px;
+  color: #5f5f5f;
+  font-family: Poppins, var(--default-font-family);
+  font-size: 11.195245742797852px;
+  font-weight: 400;
+  line-height: 12px;
+  text-align: center;
+  white-space: nowrap;
+  z-index: 14;
+}
+.Budget .rectangle-6 {
+  position: absolute;
+  width: 104.207px;
+  height: 66.898px;
+  top: 6.004px;
+  left: 50%;
+  transform: translate(-50.2%, 0);
+  z-index: 16;
+}
+.Budget .px-flag-of-pakistan {
+  position: absolute;
+  width: 75px;
+  height: 50px;
+  top: 50%;
+  left: 50%;
+  background: url(./asset/item-details/No\ Hidden\ Fees.png)
+    no-repeat center;
+  background-size: contain;
+  transform: translate(-49.62%, -49.49%);
+  z-index: 13;
+}
+.Budget .rectangle-7 {
+  flex-shrink: 0;
+  position: relative;
+  width: 138.085px;
+  height: 99.49px;
+  background: #ffffff;
+  z-index: 18;
+  border-radius: 6.433px;
+  box-shadow: 0 8.577px 10.664px 0 rgba(0, 0, 0, 0.3);
+}
+.Budget .flag-of-china {
+  position: relative;
+  width: 74.286px;
+  height: 50px;
+  margin: 16px 0 0 38.742px;
+  background: url(./asset/item-details/Book.png)
+    no-repeat center;
+  background-size: contain;
+  z-index: 19;
+}
+.Budget .line-8 {
+  position: relative;
+  width: 128.221px;
+  height: 0.43px;
+  margin: 14.285px 0 0 4.719px;
+  background-size: cover;
+  z-index: 21;
+}
+.Budget .china {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  position: relative;
+  width: 34px;
+  height: 12px;
+  margin: 3.324px 0 0 51.742px;
+  color: #5f5f5f;
+  font-family: Poppins, var(--default-font-family);
+  font-size: 11.195245742797852px;
+  font-weight: 400;
+  line-height: 12px;
+  text-align: center;
+  white-space: nowrap;
+  z-index: 20;
+}
+
+
+.experience {
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: nowrap;
+  gap: 28px;
+  position: relative;
+  width: 636.339px;
+  margin: 20px auto;
+
+}
+.experience .rectangle-nepal {
+  flex-shrink: 0;
+  position: relative;
+  width: 138.085px;
+  height: 99.49px;
+  background: white;
+  z-index: 1;
+  border-radius: 6.433px;
+  box-shadow: 0 8.577px 10.664px 0 rgba(0, 0, 0, 0.3);
+}
+.experience .px-flag {
+  position: relative;
+  width: 40.714px;
+  height: 50px;
+  margin: 17px 0 0 49px;
+  background: url(./asset/item-details/Add\ User\ Male.png)
+    no-repeat center;
+  background-size: contain;
+  z-index: 2;
+  top: -11px;
+}
+.experience .line {
+  position: relative;
+  width: 128.222px;
+  height: 0.43px;
+  margin: 13.285px 0 0 4.719px;
+  background-size: cover;
+  z-index: 4;
+  top: 67px;
+  left:65px
+}
+.experience .nepal {
+  position: relative;
+  width: 33px;
+  height: 12px;
+  margin: 3.324px 0 0 45px;
+  cursor: pointer;
+  color: black;
+  font-family: Poppins, var(--default-font-family);
+  font-size: 11.195245742797852px;
+  font-weight: 400;
+  line-height: 12px;
+  white-space: nowrap;
+  background: transparent;
+  border: none;
+  z-index: 3;
+}
+.experience .rectangle-1 {
+  flex-shrink: 0;
+  position: relative;
+  width: 138.085px;
+  height: 99.49px;
+  background: orange;
+  z-index: 6;
+  border-radius: 6.433px;
+  box-shadow: 0 8.577px 10.664px 0 rgba(0, 0, 0, 0.3);
+}
+.experience .rectangle-2 {
+  position: relative;
+  width: 104.207px;
+  height: 66.898px;
+  margin: 6.004px 0 0 16.727px;
+  z-index: 10;
+  overflow: visible auto;
+}
+.experience .px-flag-of-india {
+  position: relative;
+  width: 75.362px;
+  height: 50px;
+  margin: 13.996px 0 0 14.188px;
+  background: url(./asset/item-details/Cliff.png)
+    no-repeat center;
+  background-size: contain;
+  z-index: 7;
+}
+.experience .line-3 {
+  position: relative;
+  width: 128.222px;
+  height: 0.43px;
+  margin: 7.383px 0 0 4.719px;
+  background: url(./assets/images/102cdbee-f806-4528-b4b1-6b237bbf7bc3.png)
+    no-repeat center;
+  background-size: cover;
+  z-index: 9;
+}
+.experience .india {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  position: relative;
+  width: 28px;
+  height: 12px;
+  margin: 3.82px 0 0 54.915px;
+  color: white;
+  font-family: Poppins, var(--default-font-family);
+  font-size: 11.195245742797852px;
+  font-weight: 400;
+  line-height: 12px;
+  text-align: center;
+  white-space: nowrap;
+  z-index: 8;
+}
+.experience .rectangle-4 {
+  flex-shrink: 0;
+  position: relative;
+  width: 138.085px;
+  height: 99.49px;
+  background: #ffffff;
+  z-index: 12;
+  border-radius: 6.433px;
+  box-shadow: 0 8.577px 10.664px 0 rgba(0, 0, 0, 0.3);
+}
+.experience .line-5 {
+  position: relative;
+  width: 128.221px;
+  height: 0.43px;
+  margin: 80.285px 0 0 4.719px;
+  background: url(./assets/images/88fed9ba-3d1f-42c6-a61b-507b5d20c5e8.png)
+    no-repeat center;
+  background-size: cover;
+  z-index: 15;
+}
+.experience .span-pakistan {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  position: relative;
+  width: 48px;
+  height: 12px;
+  margin: 3.82px 0 0 44.828px;
+  color: #5f5f5f;
+  font-family: Poppins, var(--default-font-family);
+  font-size: 11.195245742797852px;
+  font-weight: 400;
+  line-height: 12px;
+  text-align: center;
+  white-space: nowrap;
+  z-index: 14;
+}
+.experience .rectangle-6 {
+  position: absolute;
+  width: 104.207px;
+  height: 66.898px;
+  top: 6.004px;
+  left: 50%;
+  transform: translate(-50.2%, 0);
+  z-index: 16;
+}
+.experience .px-flag-of-pakistan {
+  position: absolute;
+  width: 75px;
+  height: 50px;
+  top: 50%;
+  left: 50%;
+  background: url(./asset/item-details/Peace\ Symbol.png)
+    no-repeat center;
+  background-size: contain;
+  transform: translate(-49.62%, -49.49%);
+  z-index: 13;
+}
+.experience .rectangle-7 {
+  flex-shrink: 0;
+  position: relative;
+  width: 138.085px;
+  height: 99.49px;
+  background: #ffffff;
+  z-index: 18;
+  border-radius: 6.433px;
+  box-shadow: 0 8.577px 10.664px 0 rgba(0, 0, 0, 0.3);
+}
+.experience .flag-of-china {
+  position: relative;
+  width: 74.286px;
+  height: 50px;
+  margin: 16px 0 0 38.742px;
+  background: url(./asset/item-details/Helicopter.png)
+    no-repeat center;
+  background-size: contain;
+  z-index: 19;
+}
+.experience .line-8 {
+  position: relative;
+  width: 128.221px;
+  height: 0.43px;
+  margin: 14.285px 0 0 4.719px;
+  background-size: contain;
+  z-index: 21;
+}
+.experience .china {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  position: relative;
+  width: 34px;
+  height: 12px;
+  margin: 3.324px 0 0 51.742px;
+  color: #5f5f5f;
+  font-family: Poppins, var(--default-font-family);
+  font-size: 11.195245742797852px;
+  font-weight: 400;
+  line-height: 12px;
+  text-align: center;
+  white-space: nowrap;
+  z-index: 20;
+}
+
+/* Review  Container */
+.review{
+  display: flex; 
+  flex-direction: column;
+  width: 144px;
+    margin-left: 83px;
+}
+
+.review-img-text{
+  display: flex;
+  gap: 50px;
+}
+
+.review-img-text .review-text{
+  display: flex;
+  width: 700px;
+}
+
+.review-img-text .review-text ul{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.review-img-text .review-text ul button{
+/* Group 143726239 */
+position: relative;
+width: 356px;
+height: 60px;
+left: calc(50% - 756px/2);
+border-radius: 25.5px;
+background-color: transparent;
+
+/* Check & Confirm */
+
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 600;
+font-size: 24px;
+line-height: 0%;
+/* identical to box height, or 0px */
+text-transform: capitalize;
+
+color: #232323;
+
+
+}
+
+
+
+.review-img-text .review-text li {
+  /* Budget */
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+list-style: none;
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 20.1338px;
+line-height: 100%;
+/* or 20px */
+letter-spacing: 0.1em;
+text-transform: capitalize;
+gap: 10px;
+color: #232323;
+
+
+}
+
+.review-img-text .review-text li span{
+  /* Solo */
+
+/* No more than $40,000 */
+
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 15.0519px;
+line-height: 100%;
+/* identical to box height, or 15px */
+letter-spacing: 0.1em;
+text-transform: capitalize;
+color: #232323;
+}
+
+.review-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  flex-wrap: nowrap;
+  gap: 28px;
+  position: relative;
+  width: 636.339px;
+  margin: 20px auto;
+
+}
+
+.review-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  flex-wrap: nowrap;
+  gap: 28px;
+  position: relative;
+  width: 636.339px;
+  margin: 20px auto;
+
+}
+.review-container .rectangle-nepal {
+  flex-shrink: 0;
+  position: relative;
+  width: 138.085px;
+  height: 99.49px;
+  background: white;
+  z-index: 1;
+  border-radius: 6.433px;
+  box-shadow: 0 8.577px 10.664px 0 rgba(0, 0, 0, 0.3);
+}
+.review-container .px-flag {
+  position: relative;
+  width: 40.714px;
+  height: 50px;
+  margin: 17px 0 0 49px;
+  background: url(./asset/item-details/Trekking.png)
+    no-repeat center;
+  background-size: cover;
+  z-index: 2;
+  top: -11px;
+}
+.review-container .line {
+  position: relative;
+  width: 128.222px;
+  height: 0.43px;
+  margin: 13.285px 0 0 4.719px;
+  background: url(./assets/images/0205800b-deb6-4f06-8b4c-951fc959b1d5.png)
+    no-repeat center;
+  background-size: cover;
+  z-index: 4;
+  top: 67px;
+  left:65px
+}
+.review-container .nepal {
+  position: relative;
+  width: 33px;
+  height: 12px;
+  margin: 3.324px 0 0 45px;
+  cursor: pointer;
+  color: black;
+  font-family: Poppins, var(--default-font-family);
+  font-size: 11.195245742797852px;
+  font-weight: 400;
+  line-height: 12px;
+  white-space: nowrap;
+  background: transparent;
+  border: none;
+  z-index: 3;
+}
+.review-container .rectangle-1 {
+  flex-shrink: 0;
+  position: relative;
+  width: 138.085px;
+  height: 99.49px;
+  background: orange;
+  z-index: 6;
+  border-radius: 6.433px;
+  box-shadow: 0 8.577px 10.664px 0 rgba(0, 0, 0, 0.3);
+}
+.review-container .rectangle-2 {
+  position: relative;
+  width: 104.207px;
+  height: 66.898px;
+  margin: 6.004px 0 0 16.727px;
+  z-index: 10;
+  overflow: visible auto;
+}
+.review-container .px-flag-of-india {
+  position: relative;
+  width: 75.362px;
+  height: 50px;
+  margin: 13.996px 0 0 14.188px;
+  background: url(./asset/item-details/Mission.png)
+    no-repeat center;
+  background-size: cover;
+  z-index: 7;
+}
+.review-container .line-3 {
+  position: relative;
+  width: 128.222px;
+  height: 0.43px;
+  margin: 7.383px 0 0 4.719px;
+  background: url(./assets/images/102cdbee-f806-4528-b4b1-6b237bbf7bc3.png)
+    no-repeat center;
+  background-size: cover;
+  z-index: 9;
+}
+.review-container .india {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  position: relative;
+  width: 28px;
+  height: 12px;
+  margin: 3.82px 0 0 54.915px;
+  color: white;
+  font-family: Poppins, var(--default-font-family);
+  font-size: 11.195245742797852px;
+  font-weight: 400;
+  line-height: 12px;
+  text-align: center;
+  white-space: nowrap;
+  z-index: 8;
+}
+.review-container .rectangle-4 {
+  flex-shrink: 0;
+  position: relative;
+  width: 138.085px;
+  height: 99.49px;
+  background: #ffffff;
+  z-index: 12;
+  border-radius: 6.433px;
+  box-shadow: 0 8.577px 10.664px 0 rgba(0, 0, 0, 0.3);
+}
+.review-container .line-5 {
+  position: relative;
+  width: 128.221px;
+  height: 0.43px;
+  margin: 80.285px 0 0 4.719px;
+  background: url(./assets/images/88fed9ba-3d1f-42c6-a61b-507b5d20c5e8.png)
+    no-repeat center;
+  background-size: cover;
+  z-index: 15;
+}
+.review-container .span-pakistan {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  position: relative;
+  width: 48px;
+  height: 12px;
+  margin: 3.82px 0 0 44.828px;
+  color: #5f5f5f;
+  font-family: Poppins, var(--default-font-family);
+  font-size: 11.195245742797852px;
+  font-weight: 400;
+  line-height: 12px;
+  text-align: center;
+  white-space: nowrap;
+  z-index: 14;
+}
+.review-container .rectangle-6 {
+  position: absolute;
+  width: 104.207px;
+  height: 66.898px;
+  top: 6.004px;
+  left: 50%;
+  transform: translate(-50.2%, 0);
+  z-index: 16;
+}
+.review-container .px-flag-of-pakistan {
+  position: absolute;
+  width: 75px;
+  height: 50px;
+  top: 50%;
+  left: 50%;
+  background: url(./asset/item-details/Opera\ Glasses.png)
+    no-repeat center;
+  background-size: cover;
+  transform: translate(-49.62%, -49.49%);
+  z-index: 13;
+}
+.review-container .rectangle-7 {
+  flex-shrink: 0;
+  position: relative;
+  width: 138.085px;
+  height: 99.49px;
+  background: #ffffff;
+  z-index: 18;
+  border-radius: 6.433px;
+  box-shadow: 0 8.577px 10.664px 0 rgba(0, 0, 0, 0.3);
+}
+.review-container .flag-of-china {
+  position: relative;
+  width: 74.286px;
+  height: 50px;
+  margin: 16px 0 0 38.742px;
+  background: url(./asset/item-details/Box\ Other.png)
+    no-repeat center;
+  background-size: contain;
+  z-index: 19;
+}
+.review-container .line-8 {
+  position: relative;
+  width: 128.221px;
+  height: 0.43px;
+  margin: 14.285px 0 0 4.719px;
+  background-size: cover;
+  z-index: 21;
+}
+.review-container .china {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  position: relative;
+  width: 34px;
+  height: 12px;
+  margin: 3.324px 0 0 51.742px;
+  color: #5f5f5f;
+  font-family: Poppins, var(--default-font-family);
+  font-size: 11.195245742797852px;
+  font-weight: 400;
+  line-height: 12px;
+  text-align: center;
+  white-space: nowrap;
+  z-index: 20;
+}
