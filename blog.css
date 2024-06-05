@@ -182,9 +182,10 @@
     flex-shrink: 0;
     flex-basis: auto;
     position: relative;
-    width: 302px;
+    width: 211px;
     height: 48px;
-    color: #232323;
+    color: #5f5f5f;
+
     font-family: Poppins, var(--default-font-family);
     font-size: 32px;
     font-weight: 500;
@@ -193,6 +194,14 @@
     white-space: nowrap;
     z-index: 13;
   }
+
+  .frame-2 .active{
+  text-decoration: underline;
+  text-underline-offset: 20px;
+  color: #232323;
+  }
+
+
   .line {
     flex-shrink: 0;
     position: relative;
@@ -531,3 +540,26 @@
     z-index: 135;
   }
   
+  @media (max-width:1024px) {
+
+    .frame-2 .lorem-ipsum{
+      width: 0px;
+
+    }
+
+    .frame-2{
+      gap: 46px;
+    }
+
+    .post-card{
+      width: 314px;
+    }
+    .rectangle-a{
+      width: 310.4px;
+    }
+
+    .content{
+      margin-left: 30px;
+    }
+
+  }

@@ -333,3 +333,9 @@ div h1 {
     text-decoration: underline solid 4px;
     text-underline-offset: 15px;
 }
+
+@media (max-width:1024px) {
+  .our-team{
+    width: 988px;
+  }
+}

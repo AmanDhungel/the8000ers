@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>8000ers-Dashboard</title>
+    <link rel="stylesheet" href="./navbar.css">
+    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/a31123f1a8.js" crossorigin="anonymous"></script>
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+    <!-- Fontawesome CDN Link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/a31123f1a8.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  </head>
+<body>
+  <div class="dashboard"> 
+    <div class="nav">
+
+    </div>
+    <div class="homepage">
+     <h1>Home</h1>
+
+     <div class="notification-bars">
+        <div class="notification-container">
+            <div class="rectangle" style="background: #fff8e5;"></div>
+            <span class="notification">NOTIFICATION</span>
+            <div class="frame">
+              <div class="iconly-bulk-notification">
+                <div class="notification-1">
+                  <div class="fill-1"><i class="gradient-bell fa-solid fa-bell" style="font-size: 15px;"></i></div>
+                </div>
+              </div>
+            </div>
+            <span class="unread-notifications" style="color: #ffca1e;">6 Unread Notifications</span>
+          </div>
+        <div class="notification-container">
+            <div class="rectangle" style="background: #E4F8EB;"></div>
+            <span class="notification">NOTIFICATION</span>
+            <div class="frame">
+              <div class="iconly-bulk-notification">
+                <div class="notification-1">
+                  <div class="fill-2"><i class="gradient-bell fa-solid fa-bell" style="font-size: 15px;"></i></div>
+                </div>
+              </div>
+            </div>
+
+            <span class="unread-notifications" style="color: #00BC39;">6 Unread Notifications</span>
+          </div>
+        <div class="notification-container">
+            <div class="rectangle" style="background: #EBE8FE;"></div>
+            <span class="notification">NOTIFICATION</span>
+            <div class="frame">
+              <div class="iconly-bulk-notification">
+                <div class="notification-1">
+                  <div class="fill-3"><i class="gradient-bell fa-solid fa-bell" style="font-size: 15px;"></i></div>
+                </div>
+              </div>
+            </div>
+            <span class="unread-notifications" style="color: #9687FF;">6 Unread Notifications</span>
+          </div>
+
+
+        <div class="notification-container">
+            <div class="rectangle" style="background: black;"></div>
+            <span class="notification" style="color: white;">Add New</span>
+            <div class="frame">
+              <div class="iconly-bulk-notification">
+                <div class="notification-1">
+                  <div class="fill-4"><i class="fa-solid fa-file-circle-plus"></i></div>
+                </div>
+              </div>
+            </div>
+            <span class="unread-notifications" style="color: white;">File</span>
+          </div>
+        </div>
+        <div class="charts">
+
+          <div id="curve_chart" style="width: 700px; height: 500px"></div>
+
+          <div class="chart">
+          <div class="chart-container">
+            <h3>Site Health</h3>
+            <p>Check your site health score</p>
+            <div role="progressbar" aria-valuenow="67" aria-valuemin="0" aria-valuemax="50" style="--value: 95"></div>
+            <div style="margin-top: 20px;">
+                <span>Your site 84%</span><br>
+                <span style="color: red;">Top-10% websites 92%</span>
+            </div>
+        </div>
+        
+        <div class="chart-container-1">
+          <div style="position: relative; top: 220px; left: 60px; ">
+            <h3>Online Sales</h3>
+            <p>Percentage of product a user demands</p>
+          </div>
+          <div role="progressbar-1" aria-valuenow="67" aria-valuemin="0" aria-valuemax="100" style="--value: 77; width: 230px;
+          height: 230px;
+          top: 266px;
+          left: 35px;
+      ;"></div>  
+          <div role="progressbar-0" aria-valuenow="57" aria-valuemin="0" aria-valuemax="100" style="--value: 77"></div>
+          <div role="progressbar-2" aria-valuenow="67" aria-valuemin="0" aria-valuemax="100" style="--value: 37; width: 175px;
+          top: -237px;
+          left: 63px;"></div>
+
+          
+        </div>
+        </div>
+      </div>
+
+
+      <div class="daily-container">
+        <span class="daily-task">Daily Task</span
+        ><span class="product-demand">Percentage of product a user demands</span
+        ><span class="colon">01:00</span>
+        <div class="rectangle"></div>
+        <span class="time-block">10:00</span><button class="rectangle-1"></button
+        ><span class="meeting-title">IOS Dev Team Meeting</span
+        ><span class="time-range">10:00 - 12:00</span
+        ><button class="rectangle-2"></button>
+        <div class="rectangle-3"></div>
+        <span class="seo-analytics">SEO Analytics</span
+        ><span class="logo">Logo</span
+        ><span class="time-range-4">01:00 - 03:00</span
+        ><span class="time-range-5">01:00 - 03:00</span
+        ><span class="time-04-00">04:00</span><button class="rectangle-6"></button
+        ><span class="digital-marketing">Digital Marketing</span
+        ><span class="time-04-00-05-00">04:00 - 05:00</span
+        ><span class="time-06-00">06:00</span>
+        <div class="rectangle-7"></div>
+        <span class="web-development">Web development</span
+        ><span class="time-slot">06:00 - 08:00</span>
+      </div>
+    </div>
+  </div>
+    
+
+  <script src="./nav-bar.js"></script>
+  <script src="./script.js"></script>
+</body>
+</html>

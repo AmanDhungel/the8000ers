@@ -12,7 +12,7 @@ const creatNav = () => {
     </p>
     </div>
     <div class="hero-end">
-    <button>Plan with Us</button>
+    <a href="./plan-with-us.html" > <button>Plan with Us</button></a>
     <img src="./asset/hompage-hero-iceman.png" alt="">
     </div>
     </div>

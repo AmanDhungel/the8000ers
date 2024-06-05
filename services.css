@@ -1716,3 +1716,15 @@
     z-index: 4;
   }
   
+
+  @media (max-width:1024px) {
+    .services-container{
+      height: 185vh;
+    }
+
+    .frame-15{
+      width: 1000px;
+    }
+
+  
+  }

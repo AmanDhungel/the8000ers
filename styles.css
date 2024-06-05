@@ -53,7 +53,7 @@ body {
 .hero-middle p {
   display: flex;
   height: 40px;
-  width: 33px;
+  width: 40px;
   justify-content: center;
   margin-top: auto;
   margin-bottom: auto;
@@ -66,9 +66,10 @@ body {
 }
 
 .hero-middle i {
+  width: 40px;
   border: 1px solid;
   border-radius: 50%;
-  padding: 10px;
+  padding: 12px 13px;
 }
 
 .hero-end {
@@ -404,15 +405,16 @@ body {
   margin: 5% 10%;
   display: flex;
   justify-content: center;
-  width: 1500px ;
+  width: 1325px;
   overflow: hidden;
 }
 
 #cards .card{
 display: flex;
 flex-direction: column;
-margin: 2% 5%;
+margin: 2% 3%;
 transition: 0.5s ease;
+transform: translateX(250px);
 }
 
 .card .img{
@@ -2756,7 +2758,7 @@ button {
     width: 52px;
     z-index: 83;
   }
-  .text-1d {
+  /* .below-hero .text-1d {
     flex-shrink: 0;
     flex-basis: auto;
     position: relative;
@@ -2769,7 +2771,7 @@ button {
     text-align: left;
     white-space: nowrap;
     z-index: 84;
-  }
+  } */
   .link-27 {
     display: flex;
     align-items: flex-start;
@@ -3660,6 +3662,10 @@ button {
     transform: translate(-50%, 0);
     z-index: 1;
   }
+
+  .top, .bot{
+    display: none;
+  }
   
 
   @media screen and (max-width: 1440px) {
@@ -3680,11 +3686,11 @@ button {
     }
   
     .navbar nav {
-      gap: 10px;
+      gap: 22px;
     }
   
     .navbar nav a {
-      font-size: 24px;
+      font-size: 30px;
     }
   
     .hero-not-sure {
@@ -3694,13 +3700,64 @@ button {
     .carousel-container {
       width: 90%;
   }
+
+  #cards{
+    width: 1316px;
+        display: flex;
+        overflow: hidden;
+  }
+
+  #cards .card{
+    margin: 2% 3%;
+
+  }
+
+  .prev{
+    left: calc(50% - 699px);
+  }
+
+  .next{
+    right: calc(50% - 680px);
+  }
+
+  .talktoexperts-container .why-us{
+    left: calc(40% - 400px);
+  }
+
+  .expedition-experiences .talktoexperts-button{
+    position: relative;
+    left: calc(40% - 400px);
+  }
+
+  Footer .container-14 {
+    width: 1296px;
+  }
+
+  .bottom {
+    width: 1300px;
+  }
+
   }
   
   /* 1024px */
   @media screen and (max-width: 1024px) {
+    .hero{
+      height: 80vh;
+    }
     .navbar .header {
       height: auto;
       padding: 10px;
+    }
+
+    .hero-middle i{
+      padding: 10px 13px;
+    }
+
+    
+    .navbar .header img{
+      width: 100px;
+      height: 50px;
+      margin-top: 30px;
     }
   
     .navbar nav a {
@@ -3715,37 +3772,497 @@ button {
       width: 150px;
     }
     
+    .hero-cloud{
+     top: -955px;
+    }
+    .navbar .header .hero-end img{
+      width: 50px;
+      height: 50px;
+    }
+    
     .expedition-image {
       height: 250px;
   }
+
+  .mountain-climber{
+    height: 80vh;
   }
+
+  .below-hero{
+    margin-left: 200px;
+  }
+
+  .below-hero .what-we-do{
+    display:flex;
+    flex-direction: column;
+  }
+
+  .find-travel{
+    margin-left: 50px;
+  }
+
+
+
+   #cards{
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    height: 181vh;
+    margin-right: 307px;
+   } 
+
+   #cards .card{
+    padding: 5% 3%
+   }
+    
+
+    .next, .prev{
+    display: none;
+   }
+  
+   .top, .bot{
+    display: block;
+   transform: rotate(90deg);
+   top: calc(260%);
+   left: 45%;
+  }
+
+  .bot{
+    top: 448%;
+    
+  }
+
+   
+  .whyus-container{
+    left: -200px;
+    width: 1024px;
+  }
+  .whyus-container .mt {
+    width: 1024px;
+  }
+
+  .whyus-container .cloud-1{
+    width: 120%;
+    height: 828.684px;
+    left: 200px;
+  }
+
+  .whyus-container .cloud{
+    width: 120%;
+    height: 829.684px;
+    top: -9px;
+    left: -121px;
+  }
+  .whyus-container .frame{
+    gap: 50px;
+  }
+
+  .explore-container{
+    margin: 0;
+    height: 137vh;
+  }
+
+  .explore-container .explore-packages{
+    width: 458px;
+  }
+
+  .explore-container .lorem-ipsum{
+    width: 800px;
+  }
+
+  .explore-container .cards{
+    display: flex;
+    flex-wrap:wrap;
+         width: 781px;
+        gap: 24.473px;
+        display: flex;
+        /* flex-direction: column; */
+        margin-left: 227px;
+  }
+
+  .explore-container .main-content {
+    width: 230.895px;
+  }
+
+  .ourservices-container{
+    margin: 0;
+  }
+
+  .our-services {
+    width: 489px;
+  }
+
+  .ourservices-container .lorem-ipsum{
+    width: 828px;
+  }
+
+  .ourservices-container .ourservices-img{
+    width: 309.632px;
+  }
+
+  .our-services-card{
+    width: 314px;
+  }
+
+  .ourservices-cards{
+    gap: 14px;
+  }
+
+  .ourservices-container .ourservices-text {
+    height: 32px;
+    width: 199px;
+    top: -171px;
+    left: calc(50% - 94.82px) !important;
+    color: #ffffff !important;
+    font-family: Overpass, var(--default-font-family);
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 31.65px;
+    text-align: left;
+    z-index: 9;
+    white-space: wrap;
+    text-align: center;
+}
+
+.talktoexperts-container{
+  left: -200px;
+  width: 1024px;
+}
+
+.talktoexperts-container .expertscloud{
+  left: -160px;
+  height: 320.867px;
+}
+.talktoexperts-container .expertscloud-1 {
+  width: 120%;
+  height: 793.684px;
+  overflow: hidden;
+  left: 200px;
+}
+
+
+.talktoexperts-container .why-us{
+  left: calc(50% - 400px);
+}
+
+.expedition-experiences .talktoexperts-button{
+  position: relative;
+  left: calc(80% - 400px);
+}
+
+.populardestination-container{
+  margin: 0;
+  height: 1039.543px;
+}
+
+.popular-destination{
+  width: 451px;
+}
+
+.populardestination-container .lorem-ipsum{
+  margin: 10px 0 0 27px;
+}
+
+.populardestination-container .populardestination-cards{
+  flex-wrap: wrap;
+  width: 1000px;
+}
+
+.testimonials-container {
+  width: 1290px;
+  margin: 0;
+}
+
+.testimonials-container .lorem-ipsum-2,
+.testimonials-container .lorem-ipsum-5,
+.testimonials-container .lorem-ipsum-a{
+  width: 205px;
+  font-size: 16px;
+}
+
+Footer .footer{
+  width: 1090px;
+  margin: 281px 0 0 -48px;
+}
+
+Footer .lorem-ipsum-15{
+  width: 906px;
+}
+
+  }
+
+  
+
   
   /* Mobile Devices (768px and below) */
   @media screen and (max-width: 768px) {
-    .navbar .header {
-      flex-direction: column;
-      height: auto;
+    .hero, 
+    .mountain-climber{
+      height: 71vh;
+    }
+
+    
+    .below-hero{
+      margin-left: 130px;
+    }
+
+   
+   
+
+    .navbar .header img{
+      width: 150px;
+      height: 50px;
+      margin-top: 30px;
     }
   
-    .hero-middle {
-      flex-direction: column;
-      gap: 10px;
+    .hero-middle{
+      width: 406px;
+      gap: 5px;
+    }
+
+    .hero-middle h4{
+      width: 380px;
     }
   
     .hero-end {
       flex-direction: column;
-      gap: 10px;
+      align-items: center;
+      margin-top: 10px;
     }
   
     .navbar nav {
-      flex-direction: column;
+      font-size: 7px;
       gap: 10px;
     }
   
     .navbar nav a {
-      font-size: 18px;
+      font-size: 22px;
     }
   
+    .hero-not-sure {
+      font-size: 1.5rem;
+    }
+  
+    .hero-not-sure .search input {
+      width: 180px;
+    }
+  
+    .hero-not-sure i {
+      margin-top: 10px;
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+
+    .carousel-item {
+      flex-direction: column;
+    }
+
+    .expedition-image {
+      width: 100%;
+      height: 200px;
+     }
+
+     .find-travel {
+      width: 650px;
+      gap: 20px;
+  }
+  .find-travel h1{
+    font-size: 45px;
+  }
+
+  .find-travel p {
+    width: 600px;
+}
+
+
+
+
+
+#cards {
+  height: 185vh;
+  margin-right: 162px;
+}
+
+.top{
+  top: calc(235%);
+  left: 50%;
+}
+
+.bot {
+  top: 420%;
+  left: 50%;
+}
+
+
+
+
+
+
+
+.whyus-container .group-2,
+.whyus-container .group-3,
+.whyus-container .group-4,
+.whyus-container .group-5{
+  width: 115px;
+}
+
+.whyus-container .wealth-experience,
+.whyus-container .experienced-guides,
+.whyus-container .reliable-and-credible,
+.whyus-container .customer-support{
+  font-size: 15px;
+   justify-content:start;
+   width: 98px;
+
+}
+
+.whyus-container .customer-insight,
+.whyus-container .onboarding,
+.whyus-container .trust,
+.whyus-container .online-support{
+  width: 45.207px;
+    height: 45.536px;
+    margin: 0 0 0 28.348px;
+}
+.explore-container .lorem-ipsum {
+  width: 740px;
+}
+
+.ourservices-container{
+  height: 1185.416px;
+}
+
+.ourservices-container .lorem-ipsum {
+  width: 727px;
+  margin: 10px 0 0 163px;
+}
+
+.ourservices-cards {
+  flex-wrap: wrap;
+  width: 836.896px;
+  margin: 47.59px 0px 0 202px;
+}
+
+.ourservices-container .book-now{
+  margin: 348.93px 0 0 75.112px;
+}
+
+.populardestination-container .lorem-ipsum {
+  margin: 10px 0 0 144px;
+  width: 700px;
+}
+
+.populardestination-container .populardestination-cards {
+  flex-wrap: wrap;
+  width: 778px;
+  gap: 25px;
+  margin: 60.59px 0 0 222px;
+}
+.testimonials-container .lorem-ipsum{
+  width: 728px;
+  margin: 10px 0 0 202px;
+}
+
+.testimonials-container .testimonials-cards {
+  display: flex;
+  flex-direction: column;
+}
+
+.testimonials-container{
+  height: 180vh;
+}
+
+.testimonials-container .line {
+  transform: rotate(90deg);
+}
+
+Footer .lorem-ipsum-15 {
+  width: 654px;
+}
+
+Footer .group {
+  width: 720px;
+}
+
+Footer .button {
+  width: 175px;
+  left: 513px;
+}
+
+Footer .rectangle-bg-1 {
+  width: 439px;
+}
+
+Footer .container {
+  width: 700px;
+  flex-wrap: wrap;
+}
+
+.container-18 {
+  gap: 21px;
+  align-self: initial;
+}
+
+.links{
+  align-self: initial;
+}
+
+.bottom{
+  width: 700px;
+    flex-wrap: wrap;
+}
+
+Footer{
+  height: 1934px;
+}
+
+  }
+  
+  /* Smaller Mobile Devices (480px and below) */
+  @media screen and (max-width: 480px) {
+    .navbar nav a {
+      font-size: 14px;
+    }
+  
+    .hero-not-sure {
+      font-size: 1.2rem;
+    }
+
+    .hero-middle{
+      display: none;
+    }
+
+    .hero-not-sure h2{
+      font-size: 19px;
+    }
+    .whyus-container .frame {
+      display: flex;
+      flex-wrap: wrap;
+      width: 355px;
+      margin-top: -55px;
+      gap: 0px;
+      margin: 21px 0 0 97.5px;
+  }
+  
+    .hero-not-sure .search input {
+      width: 182px;
+    }
+    .hero-not-sure .search {
+      width: 233px;
+    }
+  
+    .hero-not-sure i {
+      margin-top: 5px;
+      margin-left: 5px;
+      margin-right: 5px;
+    }
+
+    .hero-cloud{
+      width: 120%;
+      top: -597px;
+    }
+
+
     .hero-not-sure {
       font-size: 1.5rem;
     }
@@ -3762,32 +4279,113 @@ button {
 
     .carousel-item {
       flex-direction: column;
-  }
-  .expedition-image {
+    }
+
+    .expedition-image {
       width: 100%;
       height: 200px;
+     }
+
+     .find-travel {
+      width: 300px;
+      gap: 20px;
   }
+  .find-travel h1{
+    font-size: 35px;
   }
-  
-  /* Smaller Mobile Devices (480px and below) */
-  @media screen and (max-width: 480px) {
-    .navbar nav a {
-      font-size: 16px;
-    }
-  
-    .hero-not-sure {
-      font-size: 1.2rem;
-    }
-  
-    .hero-not-sure .search input {
-      width: 100px;
-    }
-  
-    .hero-not-sure i {
-      margin-top: 5px;
-      margin-left: 5px;
-      margin-right: 5px;
-    }
+
+  .find-travel p {
+    width: 300px;
+    height: 136px;
+    font-size: 22px;
+    line-height: 33px;
+}
+
+.sesonal-image .spring-icon, .summer-icon, .autumn-icon, .winter-icon {
+  width: 26px;
+  height: 26px;
+  background-size: cover;
+}
+
+.sesonal-image .summer-icon{
+  margin-left: 17px;
+    margin-top: 11px;
+}
+
+.sesonal-image .spring-icon {
+  background-image: url(./asset/spring-icon.png);
+  margin-left: 10px;
+  margin-top: 8px;
+  height: 26px !important;
+}
+
+.sesonal-image .autumn-icon{
+  margin-left: 16px;
+    margin-top: 13px;
+}
+
+.sesonal-image .winter-icon{
+  margin-left: 20px;
+  margin-top: 14px;
+}
+
+#cards {
+  height: 277vh;
+  margin-right: 162px;
+}
+
+.bot {
+  top: 556%;
+}
+
+.whyus-container .why-us {
+  margin: 0px 0 0 145px;
+  font-size: 35px;
+}
+
+.whyus-container .frame {
+  gap: 0px;
+  margin: 86px 0 0 100.5px;
+}
+
+.whyus-container .expedition-experiences {
+
+  width: 335px;
+  margin: 34px 0 0 96px;
+  font-size: 15px;
+}
+
+.whyus-container .group-2,
+.whyus-container .group-3,
+.whyus-container .group-4,
+.whyus-container .group-5{
+  width: 115px;
+}
+
+.whyus-container .wealth-experience,
+.whyus-container .experienced-guides,
+.whyus-container .reliable-and-credible,
+.whyus-container .customer-support{
+  font-size: 11px;
+   justify-content:start;
+   width: 98px;
+
+}
+
+.whyus-container .customer-insight,
+.whyus-container .onboarding,
+.whyus-container .trust,
+.whyus-container .online-support{
+  width: 45.207px;
+    height: 45.536px;
+    margin: 0 0 0 28.348px;
+}
+
+.testimonials-container .testimonials-cards {
+  display: flex;
+  flex-direction: column;
+}
+
   }
 
 
