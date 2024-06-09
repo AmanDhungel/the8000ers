@@ -12,8 +12,8 @@ const creatNav = () => {
     </p>
     </div>
     <div class="hero-end">
-    <a href="./plan-with-us.html" > <button>Plan with Us</button></a>
-    <img src="./asset/hompage-hero-iceman.png" alt="">
+    <a href="./plan-with-us.html" ><button>Plan with Us</button></a>
+    <a href="./profile.html"><img src="./asset/hompage-hero-iceman.png" alt=""></a>
     </div>
     </div>
     <nav>

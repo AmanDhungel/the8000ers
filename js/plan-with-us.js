@@ -4,43 +4,68 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 function setupGroupEventListeners() {
-    const groupOne = document.querySelector('.group-one');
-    const groupTwo = document.querySelector('.group-two');
-    const groupThree = document.querySelector('.group-three');
-    const groupFour = document.querySelector('.group-four');
-    const groupFive = document.querySelector('.group-one-1');
-    const groupSix = document.querySelector('.group-two-2');
-    const groupSeven = document.querySelector('.group-three-3');
-    const groupEight = document.querySelector('.group-four-4');
+    const groups = [
+        { element: '.group-one', handler: group1 },
+        { element: '.group-two', handler: group2 },
+        { element: '.group-three', handler: group3 },
+        { element: '.group-four', handler: group4 },
+        { element: '.group-one-1', handler: group5 },
+        { element: '.group-two-2', handler: group6 },
+        { element: '.group-three-3', handler: group7 },
+        { element: '.group-four-4', handler: group8 },
+    ];
+
+    groups.forEach(({ element, handler }) => {
+        const groupElement = document.querySelector(element);
+        if (groupElement) {
+            groupElement.addEventListener('click', () => {
+                console.log(`Clicked: ${element}`);
+                handler();
+                setupCalendarHandlers();
+                
+                // Reset all lines to black
+                const lines = document.querySelectorAll('.line-one hr, .line-1 hr, .line-2 hr, .line-3 hr, .line-4 hr, .line-5 hr, .line hr');
+                lines.forEach(line => line.style.color = 'black');
+                
+                // Mapping for specific elements to orange
+                const lineMapping = {
+                    '.group-two': ['.line-one hr'],
+                    '.group-three': ['.line-one hr', '.line-1 hr'],
+                    '.group-four': ['.line-one hr', '.line-1 hr', '.line-2 hr'],
+                    '.group-one-1': ['.line-one hr', '.line-1 hr', '.line-2 hr', '.line-3 hr'],
+                    '.group-two-2': ['.line-one hr', '.line-1 hr', '.line-2 hr', '.line-3 hr', '.line-4 hr'],
+                    '.group-three-3': ['.line-one hr', '.line-1 hr', '.line-2 hr', '.line-3 hr', '.line-4 hr', '.line-5 hr'],
+                    '.group-four-4': ['.line-one hr', '.line-1 hr', '.line-2 hr', '.line-3 hr', '.line-4 hr', '.line-5 hr', '.line hr']
+                };
     
-    groupOne.addEventListener('click', () => {
-        group1();
-    });
-    groupTwo.addEventListener('click', async () => {
-        group2();
-        setupCalendarHandlers();
-    });
-    groupThree.addEventListener('click', async () => {
-        group3();
-    });
-    groupFour.addEventListener('click', async () => {
-        group4()
-    });
-    groupFive.addEventListener('click', async () => {
-        group5()
-    });
-    groupSix.addEventListener('click', async () => {
-        group6()
-    });
-    groupSeven.addEventListener('click', async () => {
-        group7()
-    });
-    groupEight.addEventListener('click', async () => {
-        group8()
+                if (lineMapping[element]) {
+                    lineMapping[element].forEach(selector => {
+                        const lineElement = document.querySelector(selector);
+                        if (lineElement) {
+                            lineElement.style.color = 'orange';
+                        } else {
+                            console.error(`Selector not found: ${selector}`);
+                        }
+                    });
+                } else {
+                    console.error('No mapping found for element:', element);
+                }
+            });
+        } else {
+            console.error('Element not found:', element);
+        }
     });
 
-    
-
+    // Initial setup
+    console.log('Initial setup');
+    group2();
+    group3();
+    group4();
+    group5();
+    group6();
+    group7();
+    group8();
+    group1();
 }
 
 function setupCalendarHandlers() {
@@ -122,13 +147,15 @@ function setupCalendarHandlers() {
     });
 }
 
+
+
 function group1(){
     const dynamicContainer = document.querySelector('.dynamic-container');
     dynamicContainer.innerHTML = `
         <div class="rectangle">
             <div class="flex-row">
                 <span class="travel-question">How do you want to travel?</span>
-                <div class="arrow-right-alt"><i class="fa fa-arrow-right" style="font-size: 30px; margin-top: 10px; color: orange;"></i></div>
+                <div style="cursor: pointer;" class="arrow-right-alt" onclick="group2();setupCalendarHandlers();"><i class="fa fa-arrow-right" style="font-size: 30px; margin-top: 10px; color: orange;"></i></div>
             </div>
             <div class="frame">
                 <div class="frame-1">
@@ -161,8 +188,8 @@ function group2(){
     const dynamicContainer = document.querySelector('.dynamic-container');
     dynamicContainer.innerHTML = `
         <div class="header">
-            <div class="arrow-right-alt"><i class="fa fa-arrow-left" style="font-size: 30px; margin-top: 10px; color: orange;"></i></div>
-            <div class="arrow-right-alt-1"><i class="fa fa-arrow-right" style="font-size: 30px; margin-top: 10px; color: orange;"></i></div>
+            <div class="arrow-right-alt" onclick="group1();" style="cursor: pointer;"><i class="fa fa-arrow-left" style="font-size: 30px; margin-top: 10px; color: orange;"></i></div>
+            <div class="arrow-right-alt-1" onclick="group3()" style="cursor: pointer;"><i class="fa fa-arrow-right" style="font-size: 30px; margin-top: 10px; color: orange;"></i></div>
             <span class="select-your-travel">Select Your Travel Dates</span>
         </div>
         <div class="travelDates-imgs">
@@ -251,8 +278,8 @@ function group3(){
   let img = './asset/item-details/country-nepal.png';
   dynamicContainer.innerHTML = `
   <div class="header">
-  <div class="arrow-right-alt"><i class="fa fa-arrow-left" style="font-size: 30px; margin-top: 10px; color: orange;"></i></div>
-  <div class="arrow-right-alt-1"><i class="fa fa-arrow-right" style="font-size: 30px; margin-top: 10px; color: orange;"></i></div>
+  <div class="arrow-right-alt"  onclick="group2();setupCalendarHandlers();" style="cursor: pointer;"><i class="fa fa-arrow-left" style="font-size: 30px; margin-top: 10px; color: orange;"></i></div>
+  <div class="arrow-right-alt-1"  onclick="group4()" style="cursor: pointer;"><i class="fa fa-arrow-right" style="font-size: 30px; margin-top: 10px; color: orange;"></i></div>
   <span class="select-your-travel">Choose Your Destination</span>
 </div>
   <div class="country-container">
@@ -278,21 +305,19 @@ function group3(){
     <span class="china">China</span>
   </div>
 </div>
-
 <img src=${img} style="position: relative; left: 20%;" alt="">`
-
 }
 
 function group4() {
     let dynamicContainer = document.querySelector('.dynamic-container');
     dynamicContainer.innerHTML = `
         <div class="header">
-            <div class="arrow-right-alt"><i class="fa fa-arrow-left" style="font-size: 30px; margin-top: 10px; color: orange;"></i></div>
-            <div class="arrow-right-alt-1"><i class="fa fa-arrow-right" style="font-size: 30px; margin-top: 10px; color: orange;"></i></div>
+            <div class="arrow-right-alt"  onclick="group3()" style="cursor: pointer;"><i class="fa fa-arrow-left" style="font-size: 30px; margin-top: 10px; color: orange;"></i></div>
+            <div class="arrow-right-alt-1"  onclick="group5()" style="cursor: pointer;"><i class="fa fa-arrow-right" style="font-size: 30px; margin-top: 10px; color: orange;"></i></div>
             <span class="select-your-travel">Choose Your Packages</span>
         </div>
         <div class="difficulty-container">
-            <div class="rectangle-nepal">
+            <div class="rectangle-nepal" onclick="group4trekking()">
                 <div class="line"><hr></div>
                 <div class="px-flag"></div>
                 <button class="nepal">Trekking</button>
@@ -329,6 +354,7 @@ function group4() {
         </div>
     `;
 
+
     function group4trekking() {
         let dynamicdifficulty = document.querySelector('.dynamic-difficulty');
             dynamicdifficulty.innerHTML = `
@@ -344,6 +370,8 @@ function group4() {
             </div>
         </div>`;
         }
+group4expidition();
+group4trekking();
 
 
     function group4expidition() {
@@ -396,8 +424,8 @@ function group5() {
     let dynamicContainer = document.querySelector('.dynamic-container');
     dynamicContainer.innerHTML = `
     <div class="header">
-        <div class="arrow-right-alt"><i class="fa fa-arrow-left" style="font-size: 30px; margin-top: 10px; color: orange;"></i></div>
-        <div class="arrow-right-alt-1"><i class="fa fa-arrow-right" style="font-size: 30px; margin-top: 10px; color: orange;"></i></div>
+        <div class="arrow-right-alt"  onclick="group4()" style="cursor: pointer;"><i class="fa fa-arrow-left" style="font-size: 30px; margin-top: 10px; color: orange;"></i></div>
+        <div class="arrow-right-alt-1"  onclick="group6()" style="cursor: pointer;"><i class="fa fa-arrow-right" style="font-size: 30px; margin-top: 10px; color: orange;"></i></div>
         <span class="select-your-travel">Accommodation Preferences</span>
     </div>
     <div class='accomodation'>
@@ -433,8 +461,8 @@ function group6() {
     let dynamicContainer = document.querySelector('.dynamic-container');
     dynamicContainer.innerHTML = `
     <div class="header">
-        <div class="arrow-right-alt"><i class="fa fa-arrow-left" style="font-size: 30px; margin-top: 10px; color: orange;"></i></div>
-        <div class="arrow-right-alt-1"><i class="fa fa-arrow-right" style="font-size: 30px; margin-top: 10px; color: orange;"></i></div>
+        <div class="arrow-right-alt"  onclick="group5()" style="cursor: pointer;"><i class="fa fa-arrow-left" style="font-size: 30px; margin-top: 10px; color: orange;"></i></div>
+        <div class="arrow-right-alt-1"  onclick="group7()" style="cursor: pointer;"><i class="fa fa-arrow-right" style="font-size: 30px; margin-top: 10px; color: orange;"></i></div>
         <span class="select-your-travel">Budget</span>
     </div>
     <div class='budget'>
@@ -488,8 +516,8 @@ function group7() {
     let dynamicContainer = document.querySelector('.dynamic-container');
     dynamicContainer.innerHTML = `
     <div class="header">
-        <div class="arrow-right-alt"><i class="fa fa-arrow-left" style="font-size: 30px; margin-top: 10px; color: orange;"></i></div>
-        <div class="arrow-right-alt-1"><i class="fa fa-arrow-right" style="font-size: 30px; margin-top: 10px; color: orange;"></i></div>
+        <div class="arrow-right-alt"  onclick="group6()" style="cursor: pointer;"><i class="fa fa-arrow-left" style="font-size: 30px; margin-top: 10px; color: orange;"></i></div>
+        <div class="arrow-right-alt-1"  onclick="group8()" style="cursor: pointer;"><i class="fa fa-arrow-right" style="font-size: 30px; margin-top: 10px; color: orange;"></i></div>
         <span class="select-your-travel">Accommodation Preferences</span>
     </div>
     <div class='experience'>
@@ -527,8 +555,7 @@ function group8() {
     let dynamicContainer = document.querySelector('.dynamic-container');
     dynamicContainer.innerHTML = `
     <div class="header">
-        <div class="arrow-right-alt"><i class="fa fa-arrow-left" style="font-size: 30px; margin-top: 10px; color: orange;"></i></div>
-        <div class="arrow-right-alt-1"><i class="fa fa-arrow-right" style="font-size: 30px; margin-top: 10px; color: orange;"></i></div>
+        <div class="arrow-right-alt"  onclick="group7()" style="cursor: pointer;"><i class="fa fa-arrow-left" style="font-size: 30px; margin-top: 10px; color: orange;"></i></div>
         <span class="select-your-travel">Accommodation Preferences</span>
     </div>   
 
