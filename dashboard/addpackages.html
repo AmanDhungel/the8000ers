@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>8000ers-Dashboard</title>
+    <link rel="stylesheet" href="./navbar.css">
+    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/a31123f1a8.js" crossorigin="anonymous"></script>
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+    <!-- Fontawesome CDN Link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/a31123f1a8.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link href="node_modules/froala-editor/css/froala_editor.pkgd.min.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="node_modules/froala-editor/js/froala_editor.pkgd.min.js"></script>
+  </head>
+<body>
+  <div class="dashboard"> 
+    <div class="nav">
+
+    </div>
+     
+    <div class="add-packages">
+        <h1 style=" position: relative; left: -25px !important;">Packages</h1>
+         <div style="display: flex; gap: 100px;">
+            <div>
+                <h4>Packages</h4>
+            <input type="text" placeholder="Enter Packages Name">
+            </div>
+            <div>
+                <h4>Fixed Departure</h4>
+            <input type="date">
+            </div>
+         </div>
+         <div>
+            <h4>Country and Region</h4>
+            <input type="text" placeholder="Enter Country and Region Name">
+         </div>
+         <div>
+            <h4>Packages</h4>
+            <select id="package-type" name="type">
+                <option value="Simple">Type</option>
+                <option value="Simple">Simple</option>
+                <option value="Luxury">Luxury</option>
+                <option value="High End">High End</option>
+              </select>
+         </div>
+         <div>
+            <h4>Fixed Departure</h4>
+            <input type="text" placeholder="Departure">
+         </div>
+         <div>
+            <h4 style="width: 510px; display: flex; justify-content: space-between;">Tags <span id="plus-input" style="padding: 0px 10px; background-color: black; color: white;">+</span></h4>
+            <input type="text" placeholder="Enter tags">
+         </div>
+         <div>
+            <h4 style="width: 510px; display: flex; justify-content: space-between;">package Tag<span id="plus-input" style="padding: 0px 10px; background-color: black; color: white;">+</span></h4>
+            <select id="package-type" name="type">
+                <option value="Simple">Popular</option>
+                <option value="Simple">Simple</option>
+                <option value="Luxury">Luxury</option>
+                <option value="High End">High End</option>
+              </select>
+         </div>
+
+         <div style="display: flex; flex-direction: column; gap: 10px;">
+            <h4>Map</h4>
+            <img src="../asset/dashboard/add-packages.png" alt="">
+            <input type="text" placeholder="Enter URL">
+         </div>
+         <div>
+            <h4 style="width: 510px; display: flex; justify-content: space-between;">Date <span id="plus-input" style="padding: 0px 10px; background-color: black; color: white;">+</span></h4>
+            <input type="date" placeholder="Date">
+         </div>
+
+         <div>
+            <h4 style="width: 510px; display: flex; justify-content: space-between;">Season<span id="plus-input" style="padding: 0px 10px; background-color: black; color: white;">+</span></h4>
+            <select id="package-type" name="type">
+                <option value="Simple">Winter</option>
+                <option value="Simple">Summer</option>
+                <option value="Luxury">Autumn</option>
+                <option value="High End">Spring</option>
+              </select>
+         </div>
+
+         <div>
+            <h4 style="width: 510px; display: flex; justify-content: space-between;">Duration<span id="plus-input" style="padding: 0px 10px; background-color: black; color: white;">+</span></h4>
+            <select id="package-type" name="type">
+                <option value="Simple">30 days</option>
+                <option value="Simple">20 days</option>
+                <option value="Luxury">10 days</option>
+                <option value="High End">1 week</option>
+              </select>
+         </div>
+
+         <div>
+            <h4 style="width: 510px; display: flex; justify-content: space-between;">Grade<span id="plus-input" style="padding: 0px 10px; background-color: black; color: white;">+</span></h4>
+            <select id="package-type" name="type">
+                <option value="Simple">Challenging</option>
+                <option value="Simple">Hard</option>
+                <option value="Simple">Moderate</option>
+                <option value="Luxury">Simple</option>
+              </select>
+         </div>
+
+         <div>
+            <h4 style="width: 510px; display: flex; justify-content: space-between;">Max Altitude<span id="plus-input" style="padding: 0px 10px; background-color: black; color: white;">+</span></h4>
+            <select id="package-type" name="type">
+                <option value="Simple">8,586m/28,169ft</option>
+                <option value="Simple">7,000m/24,169ft</option>
+                <option value="Luxury">5000m/20,169ft</option>
+                <option value="High End">4000m/16,169ft</option>
+              </select>
+         </div>
+
+         <div>
+            <h4 style="width: 510px; display: flex; justify-content: space-between;">Date <span id="plus-input" style="padding: 0px 10px; background-color: black; color: white;">+</span></h4>
+            <label for="file-upload" class="custom-file-upload">
+             Upload Image
+            </label>
+            <input type="File" id="file-upload" style="display: none;">
+         </div>
+         <div>
+            <h4 style="width: 510px; display: flex; justify-content: space-between;">Date <span id="plus-input" style="padding: 0px 10px; background-color: black; color: white;">+</span></h4>
+            <input type="text" placeholder="Host name">
+            <br>
+            <br>
+            <br>
+            <label for="file-upload" class="custom-file-upload">
+             Upload Logo
+            </label>
+            <input type="File" id="file-upload" style="display: none;">
+         </div>
+         <div >
+            <h4 style="width: 510px; display: flex; justify-content: space-between;">About Expedition <span id="plus-input" style="padding: 0px 10px; background-color: black; color: white;">+</span></h4>
+            <div id="froala" style="width: 510px;"></div>
+         </div>
+
+         <div style="display: flex; flex-direction: column; gap: 10px;">
+            <h4 style="width: 510px; display: flex; justify-content: space-between;">Itinerary<span id="plus-input" style="padding: 0px 10px; background-color: black; color: white;">+</span></h4>
+            <select id="package-type" name="type" style="width: 100px;">
+                <option value="Simple">Weeks</option>
+                <option value="Simple">1</option>
+                <option value="Luxury">2</option>
+                <option value="High End">3</option>
+              </select>
+            <select id="package-type" name="type" style="width: 100px;">
+                <option value="Simple">Days</option>
+                <option value="Simple">1</option>
+                <option value="Luxury">2</option>
+                <option value="High End">3</option>
+              </select>
+
+              <input type="text" placeholder="lorem ipsum">
+         </div>
+         <div style="display: flex; flex-direction: column; gap: 10px;">
+            <h4 style="width: 510px; display: flex; justify-content: space-between;">Facts of the Trip<span id="plus-input" style="padding: 0px 10px; background-color: black; color: white;">+</span></h4>
+            <select id="package-type" name="type" style="width: 120px;">
+                <option>Duration</option>
+                <option value="Simple">1</option>
+                <option value="Luxury">2</option>
+                <option value="High End">3</option>
+              </select>
+           
+
+              <input type="text" placeholder="lorem ipsum">
+         </div>
+         <div style="display: flex; flex-direction: column; gap: 10px;">
+            <h4 style="width: 510px; display: flex; justify-content: space-between;">FAQ<span id="plus-input" style="padding: 0px 10px; background-color: black; color: white;">+</span></h4>
+              <input type="text" placeholder="Qns">
+              <input type="text" placeholder="Ans">
+         </div>
+
+         <button>Done</button>
+    </div>
+
+    
+    <script src="./nav-bar.js"></script>
+    <script src="./script.js"></script>
+    <script> var editor = new FroalaEditor('#froala'); </script>
+  </body>
+  </html>
