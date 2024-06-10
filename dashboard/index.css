@@ -1091,3 +1091,6 @@ a {
 .text-editor #show-code[data-active="true"] {
 	background: #eee;
 }
+div span{
+  cursor: pointer;
+}

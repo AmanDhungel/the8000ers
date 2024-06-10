@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -18,233 +19,415 @@
     <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <link href="node_modules/froala-editor/css/froala_editor.pkgd.min.css" rel="stylesheet" type="text/css" />
-<script type="text/javascript" src="node_modules/froala-editor/js/froala_editor.pkgd.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js" integrity="sha512-GsLlZN/3F2ErC5ifS5QtgpiJtWd43JWSuIgh7mbzZ8zBps+dvLusV+eNQATqgA/HdeKFVgA5v3S/cIrLF7QnIg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> 
-<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script type="text/javascript" src="node_modules/froala-editor/js/froala_editor.pkgd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"
+        integrity="sha512-GsLlZN/3F2ErC5ifS5QtgpiJtWd43JWSuIgh7mbzZ8zBps+dvLusV+eNQATqgA/HdeKFVgA5v3S/cIrLF7QnIg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
+
 <body>
-  <div class="dashboard"> 
-    <div class="nav">
+    <div class="dashboard">
+        <div class="nav">
 
-    </div>
-     
-    <div class="add-packages">
-        <h1 style=" position: relative; left: -25px !important;">Packages</h1>
-         <div style="display: flex; gap: 100px;">
-            <div>
-                <h4>Packages</h4>
-            <input type="text" placeholder="Enter Packages Name">
-            </div>
-            <div>
-                <h4>Fixed Departure</h4>
-            <input type="date">
-            </div>
-         </div>
-         <div>
-            <h4>Country and Region</h4>
-            <input type="text" placeholder="Enter Country and Region Name">
-         </div>
-         <div>
-            <h4>Packages</h4>
-            <select id="package-type" name="type">
-                <option value="Simple">Type</option>
-                <option value="Simple">Simple</option>
-                <option value="Luxury">Luxury</option>
-                <option value="High End">High End</option>
-              </select>
-         </div>
-         <div>
-            <h4>Fixed Departure</h4>
-            <input type="text" placeholder="Departure">
-         </div>
-         <div>
-            <h4 style="width: 510px; display: flex; justify-content: space-between;">Tags <span id="plus-input" style="padding: 0px 10px; background-color: black; color: white;">+</span></h4>
-            <input type="text" placeholder="Enter tags">
-         </div>
-         <div>
-            <h4 style="width: 510px; display: flex; justify-content: space-between;">package Tag<span id="plus-input" style="padding: 0px 10px; background-color: black; color: white;">+</span></h4>
-            <select id="package-type" name="type">
-                <option value="Simple">Popular</option>
-                <option value="Simple">Simple</option>
-                <option value="Luxury">Luxury</option>
-                <option value="High End">High End</option>
-              </select>
-         </div>
+        </div>
 
-         <div style="display: flex; flex-direction: column; gap: 10px;">
-            <h4>Map</h4>
-            <img src="../asset/dashboard/add-packages.png" alt="">
-            <input type="text" placeholder="Enter URL">
-         </div>
-         <div>
-            <h4 style="width: 510px; display: flex; justify-content: space-between;">Date <span id="plus-input" style="padding: 0px 10px; background-color: black; color: white;">+</span></h4>
-            <input type="date" placeholder="Date">
-         </div>
-
-         <div>
-            <h4 style="width: 510px; display: flex; justify-content: space-between;">Season<span id="plus-input" style="padding: 0px 10px; background-color: black; color: white;">+</span></h4>
-            <select id="package-type" name="type">
-                <option value="Simple">Winter</option>
-                <option value="Simple">Summer</option>
-                <option value="Luxury">Autumn</option>
-                <option value="High End">Spring</option>
-              </select>
-         </div>
-
-         <div>
-            <h4 style="width: 510px; display: flex; justify-content: space-between;">Duration<span id="plus-input" style="padding: 0px 10px; background-color: black; color: white;">+</span></h4>
-            <select id="package-type" name="type">
-                <option value="Simple">30 days</option>
-                <option value="Simple">20 days</option>
-                <option value="Luxury">10 days</option>
-                <option value="High End">1 week</option>
-              </select>
-         </div>
-
-         <div>
-            <h4 style="width: 510px; display: flex; justify-content: space-between;">Grade<span id="plus-input" style="padding: 0px 10px; background-color: black; color: white;">+</span></h4>
-            <select id="package-type" name="type">
-                <option value="Simple">Challenging</option>
-                <option value="Simple">Hard</option>
-                <option value="Simple">Moderate</option>
-                <option value="Luxury">Simple</option>
-              </select>
-         </div>
-
-         <div>
-            <h4 style="width: 510px; display: flex; justify-content: space-between;">Max Altitude<span id="plus-input" style="padding: 0px 10px; background-color: black; color: white;">+</span></h4>
-            <select id="package-type" name="type">
-                <option value="Simple">8,586m/28,169ft</option>
-                <option value="Simple">7,000m/24,169ft</option>
-                <option value="Luxury">5000m/20,169ft</option>
-                <option value="High End">4000m/16,169ft</option>
-              </select>
-         </div>
-
-         <div>
-            <h4 style="width: 510px; display: flex; justify-content: space-between;">Date <span id="plus-input" style="padding: 0px 10px; background-color: black; color: white;">+</span></h4>
-            <label for="file-upload" class="custom-file-upload">
-             Upload Image
-            </label>
-            <input type="File" id="file-upload" style="display: none;">
-         </div>
-         <div>
-            <h4 style="width: 510px; display: flex; justify-content: space-between;">Date <span id="plus-input" style="padding: 0px 10px; background-color: black; color: white;">+</span></h4>
-            <input type="text" placeholder="Host name">
-            <br>
-            <br>
-            <br>
-            <label for="file-upload" class="custom-file-upload">
-             Upload Logo
-            </label>
-            <input type="File" id="file-upload" style="display: none;">
-         </div>
-         <div >
-            <h4 style="width: 510px; display: flex; justify-content: space-between;">About Expedition <span id="plus-input" style="padding: 0px 10px; background-color: black; color: white;">+</span></h4>
-            <div class="text-editor">
-                <div class="toolbar">
-                    <div class="head">
-                        <input type="text" placeholder="Filename" value="untitled" id="filename">
-                        <select onchange="fileHandle(this.value); this.selectedIndex=0">
-                            <option value="" selected="" hidden="" disabled="">File</option>
-                            <option value="new">New file</option>
-                            <option value="txt">Save as txt</option>
-                            <option value="pdf">Save as pdf</option>
-                        </select>
-                        <select onchange="formatDoc('formatBlock', this.value); this.selectedIndex=0;">
-                            <option value="" selected="" hidden="" disabled="">Format</option>
-                            <option value="h1">Heading 1</option>
-                            <option value="h2">Heading 2</option>
-                            <option value="h3">Heading 3</option>
-                            <option value="h4">Heading 4</option>
-                            <option value="h5">Heading 5</option>
-                            <option value="h6">Heading 6</option>
-                            <option value="p">Paragraph</option>
-                        </select>
-                        <select onchange="formatDoc('fontSize', this.value); this.selectedIndex=0;">
-                            <option value="" selected="" hidden="" disabled="">Font size</option>
-                            <option value="1">Extra small</option>
-                            <option value="2">Small</option>
-                            <option value="3">Regular</option>
-                            <option value="4">Medium</option>
-                            <option value="5">Large</option>
-                            <option value="6">Extra Large</option>
-                            <option value="7">Big</option>
-                        </select>
-                        <div class="color">
-                            <span>Color</span>
-                            <input type="color" oninput="formatDoc('foreColor', this.value); this.value='#000000';">
-                        </div>
-                        <div class="color">
-                            <span>Background</span>
-                            <input type="color" oninput="formatDoc('hiliteColor', this.value); this.value='#000000';">
-                        </div>
+            <div class="add-packages">
+                <h1 style=" position: relative; left: -25px !important;">Packages</h1>
+                <div style="display: flex; gap: 100px;">
+                    <div>
+                        <h4>Packages</h4>
+                            <input type="text" placeholder="Enter Packages Name">
                     </div>
-                    <div class="btn-toolbar">
-                        <button onclick="formatDoc('undo')"><i class='bx bx-undo' ></i></button>
-                        <button onclick="formatDoc('redo')"><i class='bx bx-redo' ></i></button>
-                        <button onclick="formatDoc('bold')"><i class='bx bx-bold'></i></button>
-                        <button onclick="formatDoc('underline')"><i class='bx bx-underline' ></i></button>
-                        <button onclick="formatDoc('italic')"><i class='bx bx-italic' ></i></button>
-                        <button onclick="formatDoc('strikeThrough')"><i class='bx bx-strikethrough' ></i></button>
-                        <button onclick="formatDoc('justifyLeft')"><i class='bx bx-align-left' ></i></button>
-                        <button onclick="formatDoc('justifyCenter')"><i class='bx bx-align-middle' ></i></button>
-                        <button onclick="formatDoc('justifyRight')"><i class='bx bx-align-right' ></i></button>
-                        <button onclick="formatDoc('justifyFull')"><i class='bx bx-align-justify' ></i></button>
-                        <button onclick="formatDoc('insertOrderedList')"><i class='bx bx-list-ol' ></i></button>
-                        <button onclick="formatDoc('insertUnorderedList')"><i class='bx bx-list-ul' ></i></button>
-                        <button onclick="addLink()"><i class='bx bx-link' ></i></button>
-                        <button onclick="formatDoc('unlink')"><i class='bx bx-unlink' ></i></button>
-                        <button id="show-code" data-active="false">&lt;/&gt;</button>
+                    <div >
+                        <h4>Fixed Departure</h4>
+                            <input type="date">
                     </div>
                 </div>
-                <div id="content" contenteditable="true" spellcheck="false">
-                    Lorem, ipsum.
+                <div style="width: 510px;">
+                    <h4>Country and Region</h4>
+                    <div class="input-div">
+                        <input type="text" placeholder="Enter Country and Region Name">
+                    </div>
                 </div>
+                <div>
+                    <h4>Packages</h4>
+                    <div class="input-div">
+                        <select id="package-type" name="type">
+                            <option value="Simple">Type</option>
+                            <option value="Simple">Simple</option>
+                            <option value="Luxury">Luxury</option>
+                            <option value="High End">High End</option>
+                        </select>
+                    </div>
+                </div>
+                <div>
+                    <h4>Fixed Departure</h4>
+                    <div class="input-div">
+                        <input type="text" placeholder="Departure">
+                    </div>
+                </div>
+                <div  style="width: 510px; display: flex; flex-direction: column; gap: 10px;">
+                    <h4 style="width: 510px; display: flex; justify-content: space-between;">Tags <span id="plus-input-tags" class="plus-input" style="padding: 0px 10px; background-color: black; color: white;">+</span></h4>
+                    <div class="input-div">
+                        <input type="text" placeholder="Enter tags">
+                    </div>
+                </div>
+                <div  style="width: 510px; display: flex; flex-direction: column; gap: 10px;">
+                    <h4 style="width: 510px; display: flex; justify-content: space-between;">Package Tag<span id="plus-input-package-tag" class="plus-input" style="padding: 0px 10px; background-color: black; color: white;">+</span></h4>
+                    <div class="input-div">
+                        <select id="package-tag-type" name="type">
+                            <option value="Popular">Popular</option>
+                            <option value="Simple">Simple</option>
+                            <option value="Luxury">Luxury</option>
+                            <option value="High End">High End</option>
+                        </select>
+                    </div>
+                </div>
+        
+                <div style="display: flex; flex-direction: column; gap: 10px;">
+                    <h4>Map</h4>
+                    <img src="../asset/dashboard/add-packages.png" alt="">
+                    <div class="input-div">
+                        <input type="text" placeholder="Enter URL">
+                    </div>
+                </div>
+                <div  style="width: 510px; display: flex; flex-direction: column; gap: 10px;">
+                    <h4 style="width: 510px; display: flex; justify-content: space-between;">Date <span id="plus-input-date" class="plus-date" style="padding: 0px 10px; background-color: black; color: white;">+</span></h4>
+                    <div class="input-div">
+                        <input type="date" placeholder="Date">
+                    </div>
+                </div>
+        
+                <div  style="width: 510px; display: flex; flex-direction: column; gap: 10px;">
+                    <h4 style="width: 510px; display: flex; justify-content: space-between;">Season<span id="plus-input-season" class="plus-input" style="padding: 0px 10px; background-color: black; color: white;">+</span></h4>
+                    <div class="input-div">
+                        <select id="season-type" name="type">
+                            <option value="Winter">Winter</option>
+                            <option value="Summer">Summer</option>
+                            <option value="Autumn">Autumn</option>  style="width: 510px; display: flex; flex-direction: column; gap: 10px;"
+                            <option value="Spring">Spring</option>
+                        </select>
+                    </div>
+                </div>
+        
+                <div  style="width: 510px; display: flex; flex-direction: column; gap: 10px;">
+                    <h4 style="width: 510px; display: flex; justify-content: space-between;">Duration<span id="plus-input-duration" class="plus-input" style="padding: 0px 10px; background-color: black; color: white;">+</span></h4>
+                    <div class="input-div">
+                        <select id="duration-type" name="type">
+                            <option value="30 days">30 days</option>
+                            <option value="20 days">20 days</option>
+                            <option value="10 days">10 days</option>
+                            <option value="1 week">1 week</option>
+                        </select>
+                    </div>
+                </div>
+        
+                <div  style="width: 510px; display: flex; flex-direction: column; gap: 10px;">
+                    <h4 style="width: 510px; display: flex; justify-content: space-between;">Grade<span id="plus-input-grade" class="plus-input" style="padding: 0px 10px; background-color: black; color: white;">+</span></h4>
+                    <div class="input-div">
+                        <select id="grade-type" name="type">
+                            <option value="Challenging">Challenging</option>
+                            <option value="Hard">Hard</option>
+                            <option value="Moderate">Moderate</option>
+                            <option value="Simple">Simple</option>
+                        </select>
+                    </div>
+                </div>
+        
+                <div  style="width: 510px; display: flex; flex-direction: column; gap: 30px;">
+                    <h4 style="width: 510px; display: flex; justify-content: space-between;">Max Altitude<span id="plus-input-altitude" class="plus-input" style="padding: 0px 10px; background-color: black; color: white;">+</span></h4>
+                    <div class="input-div">
+                        <select id="altitude-type" name="type">
+                            <option value="8,586m/28,169ft">8,586m/28,169ft</option>
+                            <option value="7,000m/24,169ft">7,000m/24,169ft</option>
+                            <option value="5000m/20,169ft">5000m/20,169ft</option>
+                            <option value="4000m/16,169ft">4000m/16,169ft</option>
+                        </select>
+                    </div>
+                </div>
+        
+                <div  style="width: 510px; display: flex; flex-direction: column; gap: 10px;">
+                    <h4 style="width: 510px; display: flex; justify-content: space-between;">Image <span id="plus-input-upload-image" class="plus-file" style="padding: 0px 10px; background-color: black; color: white;">+</span></h4>
+                    <div class="input-div" style="display: flex; flex-direction: column; gap: 20px;">
+                        <label for="file-upload" class="custom-file-upload" style="width: 114px;">
+                            Upload Image
+                        </label>
+                        <input type="File" id="file-upload" style="display: none;">
+                    </div>
+                </div>
+                <div  style="width: 510px; display: flex; flex-direction: column;">
+                    <h4 style="width: 510px; display: flex; justify-content: space-between;">Image <span id="plus-input-upload-logo" class="plus-file" style="padding: 0px 10px; background-color: black; color: white;">+</span></h4>
+                    <div class="input-div" style="display: flex; flex-direction: column; gap: 20px;">
+                        <input type="text" placeholder="Host name">
+                        <label for="file-upload-logo" class="custom-file-upload " style="width: 114px;">
+                            Upload Logo
+                        </label>
+                        <input type="File" id="file-upload-logo" style="display: none;">
+                    </div>
+                </div>
+                <div>
+                    <h4 style="width: 510px; display: flex; justify-content: space-between;">About Expedition <span id="plus-input-about-expedition" class="plus-input" style="padding: 0px 10px; background-color: black; color: white;">+</span></h4>
+                    <div class="text-editor">
+                        <div class="toolbar">
+                            <div class="head">
+                                <input type="text" placeholder="Filename" value="untitled" id="filename">
+                                <select onchange="fileHandle(this.value); this.selectedIndex=0">
+                                    <option value="" selected="" hidden="" disabled="">File</option>
+                                    <option value="new">New file</option>
+                                    <option value="txt">Save as txt</option>
+                                    <option value="pdf">Save as pdf</option>
+                                </select>
+                                <select onchange="formatDoc('formatBlock', this.value); this.selectedIndex=0;">
+                                    <option value="" selected="" hidden="" disabled="">Format</option>
+                                    <option value="h1">Heading 1</option>
+                                    <option value="h2">Heading 2</option>
+                                    <option value="h3">Heading 3</option>
+                                    <option value="h4">Heading 4</option>
+                                    <option value="h5">Heading 5</option>
+                                    <option value="h6">Heading 6</option>
+                                    <option value="p">Paragraph</option>
+                                </select>
+                                <select onchange="formatDoc('fontSize', this.value); this.selectedIndex=0;">
+                                    <option value="" selected="" hidden="" disabled="">Font size</option>
+                                    <option value="1">Extra small</option>
+                                    <option value="2">Small</option>
+                                    <option value="3">Regular</option>
+                                    <option value="4">Medium</option>
+                                    <option value="5">Large</option>
+                                    <option value="6">Extra Large</option>
+                                    <option value="7">Big</option>
+                                </select>
+                                <div class="color">
+                                    <span>Color</span>
+                                    <input type="color" oninput="formatDoc('foreColor', this.value); this.value='#000000';">
+                                </div>
+                                <div class="color">
+                                    <span>Background</span>
+                                    <input type="color" oninput="formatDoc('hiliteColor', this.value); this.value='#000000';">
+                                </div>
+                            </div>
+                            <div class="btn-toolbar">
+                                <button onclick="formatDoc('undo')"><i class='bx bx-undo'></i></button>
+                                <button onclick="formatDoc('redo')"><i class='bx bx-redo'></i></button>
+                                <button onclick="formatDoc('bold')"><i class='bx bx-bold'></i></button>
+                                <button onclick="formatDoc('underline')"><i class='bx bx-underline'></i></button>
+                                <button onclick="formatDoc('italic')"><i class='bx bx-italic'></i></button>
+                                <button onclick="formatDoc('strikeThrough')"><i class='bx bx-strikethrough'></i></button>
+                                <button onclick="formatDoc('justifyLeft')"><i class='bx bx-align-left'></i></button>
+                                <button onclick="formatDoc('justifyCenter')"><i class='bx bx-align-middle'></i></button>
+                                <button onclick="formatDoc('justifyRight')"><i class='bx bx-align-right'></i></button>
+                                <button onclick="formatDoc('justifyFull')"><i class='bx bx-align-justify'></i></button>
+                                <button onclick="formatDoc('insertOrderedList')"><i class='bx bx-list-ol'></i></button>
+                                <button onclick="formatDoc('insertUnorderedList')"><i class='bx bx-list-ul'></i></button>
+                                <button onclick="addLink()"><i class='bx bx-link'></i></button>
+                                <button onclick="formatDoc('unlink')"><i class='bx bx-unlink'></i></button>
+                                <button id="show-code" data-active="false">&lt;/&gt;</button>
+                            </div>
+                        </div>
+                        <div id="content" contenteditable="true" spellcheck="false">
+                            Lorem, ipsum.
+                        </div>
+                    </div>
+                </div>
+        
+                <div style="display: flex; flex-direction: column; gap: 10px; width: 510px;">
+                    <h4 style="width: 510px; display: flex; justify-content: space-between;">Itinerary<span id="plus-input-itinerary" class="plus-select" style="padding: 0px 10px; background-color: black; color: white; cursor: pointer;">+</span></h4>
+                    <div class="input-div" id="itinerary-input-div" style="width: 510px; display: flex; flex-direction: column; gap: 20px;">
+                        <select id="itinerary-weeks" name="type" style="width: 100px;">
+                            <option value="Simple">Weeks</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                        </select>
+                        <select id="itinerary-days" name="type" style="width: 100px;">
+                            <option value="Simple">Days</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                        </select>
+                        <input type="text" placeholder="lorem ipsum">
+                    </div>
+                </div>
+                <div style="display: flex; flex-direction: column; gap: 10px;">
+                    <h4 style="width: 510px; display: flex; justify-content: space-between;">Facts of the Trip<span id="plus-input-facts" class="plus-select" style="padding: 0px 10px; background-color: black; color: white; cursor: pointer;">+</span></h4>
+                    <div class="input-div" id="facts-input-div" style="width: 510px; display: flex; flex-direction: column; gap: 20px;">
+                        <select id="facts-duration" name="type" style="width: 120px;">
+                            <option>Duration</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                        </select>
+                        <input type="text" placeholder="lorem ipsum">
+                    </div>
+                </div>
+                <div style="display: flex; flex-direction: column; gap: 10px;">
+                    <h4 style="width: 510px; display: flex; justify-content: space-between;">FAQ<span id="plus-input-faq" class="plus-input" style="padding: 0px 10px; background-color: black; color: white;">+</span></h4>
+                    <div id="faq-input-div" style="display: flex; flex-direction: column; width: 510px; gap: 10px;">
+                        <input type="text" placeholder="Qns">
+                    <input type="text" placeholder="Ans">
+                    </div>
+                </div>
+        
+                <button>Done</button>
             </div>
-         </div>
+        
+            <script>
+                document.querySelectorAll('.plus-input').forEach(span => {
+                    span.addEventListener('click', function() {
+                        const parentDiv = this.closest('div').querySelector('.input-div');
+                        const input = document.createElement('input');
+                        input.type = 'text';
+                        input.placeholder = 'Enter value';
+                        parentDiv.appendChild(input);
+                    });
+                });
+                document.querySelectorAll('.plus-date').forEach(span => {
+                    span.addEventListener('click', function() {
+                        const parentDiv = this.closest('div').querySelector('.input-div');
+                        const input = document.createElement('input');
+                        input.type = 'date';
+                        parentDiv.appendChild(input);
+                    });
+                });
+                document.querySelectorAll('.plus-file').forEach(span => {
+                    span.addEventListener('click', function() {
+                        const parentDiv = this.closest('div').querySelector('.input-div');
+                        const input = document.createElement('input');
+                        input.type = 'file';
+                        parentDiv.appendChild(input);
+                    });
+                });
 
-         <div style="display: flex; flex-direction: column; gap: 10px;">
-            <h4 style="width: 510px; display: flex; justify-content: space-between;">Itinerary<span id="plus-input" style="padding: 0px 10px; background-color: black; color: white;">+</span></h4>
-            <select id="package-type" name="type" style="width: 100px;">
-                <option value="Simple">Weeks</option>
-                <option value="Simple">1</option>
-                <option value="Luxury">2</option>
-                <option value="High End">3</option>
-              </select>
-            <select id="package-type" name="type" style="width: 100px;">
-                <option value="Simple">Days</option>
-                <option value="Simple">1</option>
-                <option value="Luxury">2</option>
-                <option value="High End">3</option>
-              </select>
 
-              <input type="text" placeholder="lorem ipsum">
-         </div>
-         <div style="display: flex; flex-direction: column; gap: 10px;">
-            <h4 style="width: 510px; display: flex; justify-content: space-between;">Facts of the Trip<span id="plus-input" style="padding: 0px 10px; background-color: black; color: white;">+</span></h4>
-            <select id="package-type" name="type" style="width: 120px;">
-                <option>Duration</option>
-                <option value="Simple">1</option>
-                <option value="Luxury">2</option>
-                <option value="High End">3</option>
-              </select>
-           
+                document.addEventListener("DOMContentLoaded", function() {
+            const faqAddButton = document.getElementById("plus-input-faq");
+            const faqInputDiv = document.getElementById("faq-input-div");
 
-              <input type="text" placeholder="lorem ipsum">
-         </div>
-         <div style="display: flex; flex-direction: column; gap: 10px;">
-            <h4 style="width: 510px; display: flex; justify-content: space-between;">FAQ<span id="plus-input" style="padding: 0px 10px; background-color: black; color: white;">+</span></h4>
-              <input type="text" placeholder="Qns">
-              <input type="text" placeholder="Ans">
-         </div>
+            faqAddButton.addEventListener("click", function() {
+                const questionInput = document.createElement("input");
+                questionInput.type = "text";
+                questionInput.placeholder = "Qns";
 
-         <button>Done</button>
-    </div>
+                const answerInput = document.createElement("input");
+                answerInput.type = "text";
+                answerInput.placeholder = "Ans";
 
-    
-    <script src="./nav-bar.js"></script>
-    <script src="./script.js"></script>
-    <script> var editor = new FroalaEditor('#froala'); </script>
-  </body>
-  </html>
+                faqInputDiv.appendChild(questionInput);
+                faqInputDiv.appendChild(answerInput);
+            });
+        });
+
+
+        document.addEventListener("DOMContentLoaded", function() {
+            const factsAddButton = document.getElementById("plus-input-facts");
+            const factsInputDiv = document.getElementById("facts-input-div");
+
+            factsAddButton.addEventListener("click", function() {
+                const newSelect = document.createElement("select");
+                newSelect.name = "type";
+                newSelect.style.width = "120px";
+                
+                const durationOption = document.createElement("option");
+                durationOption.textContent = "Duration";
+                
+                const option1 = document.createElement("option");
+                option1.value = "1";
+                option1.textContent = "1";
+                
+                const option2 = document.createElement("option");
+                option2.value = "2";
+                option2.textContent = "2";
+                
+                const option3 = document.createElement("option");
+                option3.value = "3";
+                option3.textContent = "3";
+                
+                newSelect.appendChild(durationOption);
+                newSelect.appendChild(option1);
+                newSelect.appendChild(option2);
+                newSelect.appendChild(option3);
+
+                const newInput = document.createElement("input");
+                newInput.type = "text";
+                newInput.placeholder = "lorem ipsum";
+
+                factsInputDiv.appendChild(newSelect);
+                factsInputDiv.appendChild(newInput);
+            });
+        });
+
+
+        document.addEventListener("DOMContentLoaded", function() {
+            const itineraryAddButton = document.getElementById("plus-input-itinerary");
+            const itineraryInputDiv = document.getElementById("itinerary-input-div");
+
+            itineraryAddButton.addEventListener("click", function() {
+                const newWeeksSelect = document.createElement("select");
+                newWeeksSelect.name = "type";
+                newWeeksSelect.style.width = "100px";
+
+                const weeksOption = document.createElement("option");
+                weeksOption.value = "Simple";
+                weeksOption.textContent = "Weeks";
+
+                const weeksOption1 = document.createElement("option");
+                weeksOption1.value = "1";
+                weeksOption1.textContent = "1";
+
+                const weeksOption2 = document.createElement("option");
+                weeksOption2.value = "2";
+                weeksOption2.textContent = "2";
+
+                const weeksOption3 = document.createElement("option");
+                weeksOption3.value = "3";
+                weeksOption3.textContent = "3";
+
+                newWeeksSelect.appendChild(weeksOption);
+                newWeeksSelect.appendChild(weeksOption1);
+                newWeeksSelect.appendChild(weeksOption2);
+                newWeeksSelect.appendChild(weeksOption3);
+
+                const newDaysSelect = document.createElement("select");
+                newDaysSelect.name = "type";
+                newDaysSelect.style.width = "100px";
+
+                const daysOption = document.createElement("option");
+                daysOption.value = "Simple";
+                daysOption.textContent = "Days";
+
+                const daysOption1 = document.createElement("option");
+                daysOption1.value = "1";
+                daysOption1.textContent = "1";
+
+                const daysOption2 = document.createElement("option");
+                daysOption2.value = "2";
+                daysOption2.textContent = "2";
+
+                const daysOption3 = document.createElement("option");
+                daysOption3.value = "3";
+                daysOption3.textContent = "3";
+
+                newDaysSelect.appendChild(daysOption);
+                newDaysSelect.appendChild(daysOption1);
+                newDaysSelect.appendChild(daysOption2);
+                newDaysSelect.appendChild(daysOption3);
+
+                const newInput = document.createElement("input");
+                newInput.type = "text";
+                newInput.placeholder = "lorem ipsum";
+
+                itineraryInputDiv.appendChild(newWeeksSelect);
+                itineraryInputDiv.appendChild(newDaysSelect);
+                itineraryInputDiv.appendChild(newInput);
+            });
+        });
+               
+            </script>
+
+
+        <script src="./nav-bar.js"></script>
+        <script src="./script.js"></script>
+</body>
+
+</html>
