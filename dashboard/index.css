@@ -1176,7 +1176,7 @@ div span{
 
   .daily-container{
     right: calc(30%);
-    top: 214vh;
+    top: 280vh;
     left: -83px;
   }
 
@@ -1186,7 +1186,7 @@ div span{
 }
 
 #nav-bar{
-  height: 202vh;
+  height: 261vh;
 }
 #curve_chart {
   width: 949px !important;
