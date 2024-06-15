@@ -35,3 +35,24 @@ nav.innerHTML = `
 }
 
 createNav();
+
+function checkNavToggleBasedOnWidth() {
+  const navToggle = document.getElementById('nav-toggle');
+  const mediaQuery = window.matchMedia('(max-width: 420px)');
+
+  function handleWidthChange(e) {
+    navToggle.checked = e.matches;
+  }
+
+  // Initial check
+  handleWidthChange(mediaQuery);
+
+  // Add listener for width changes
+  mediaQuery.addListener(handleWidthChange);
+}
+
+// Run the function on page load
+document.addEventListener('DOMContentLoaded', checkNavToggleBasedOnWidth);
+
+
+

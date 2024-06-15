@@ -3,7 +3,7 @@ google.charts.setOnLoadCallback(drawChart);
 
 function drawChart() {
   var data = google.visualization.arrayToDataTable([
-    ['Month', 'Sales', 'Expenses'],
+    ['Year', 'Sales', 'Expenses'],
     ['2004',  1000,      400],
     ['2005',  1170,      460],
     ['2006',  660,       1120],
@@ -13,14 +13,27 @@ function drawChart() {
   var options = {
     title: 'Company Performance',
     curveType: 'function',
-    legend: { position: 'bottom' }
-  };
+    legend: { position: 'bottom' },
+    hAxis: {
+      minValue: new Date(2003, 0, 1), // January 1, 2003
+      maxValue: new Date(2008, 0, 1)  // January 1, 2008
+    }
+  }
+  function resize() {
+    var chart = new google.visualization.LineChart(document.getElementById('curve_chart'));
+    var width = window.innerWidth < 420 ? 300 : '100%';
+    document.getElementById('curve_chart').style.width = width + 'px';
+    chart.draw(data, options);
+  }
 
-  var chart = new google.visualization.LineChart(document.getElementById('curve_chart'));
+  window.onload = resize
+  window.onresize = resize
+};
 
-  chart.draw(data, options);
-}
 
+
+window.onload = resize;
+window.onresize = resize;
 
 
 const ctx1 = document.getElementById('siteHealthChart').getContext('2d');
@@ -141,5 +154,26 @@ const ctx1 = document.getElementById('siteHealthChart').getContext('2d');
 
 
 
+    function checkCheckboxBasedOnWidth() {
+        const checkbox = document.getElementById('#nav-bar input');
+        const mediaQuery = window.matchMedia('(max-width: 420px)');
+    
+        function handleWidthChange(e) {
+          if (e.matches) {
+            checkbox.checked = "check";
+          } else {
+            checkbox.checked = false;
+          }
+        }
+    
+        // Initial check
+        handleWidthChange(mediaQuery);
+    
+        // Add listener for width changes
+        mediaQuery.addEventListener(handleWidthChange);
+      }
+    
+      // Run the function on page load
+      document.addEventListener('DOMContentLoaded', checkCheckboxBasedOnWidth);
 
     
